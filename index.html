@@ -7,111 +7,105 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         :root{--transition-speed:0.35s;--radius-sm:10px;--radius-md:16px;--radius-lg:24px;--radius-xl:32px}
-        [data-theme="dark"]{--primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#818cf8;--primary-glow:rgba(99,102,241,0.15);--primary-glow-strong:rgba(99,102,241,0.25);--secondary:#8b5cf6;--accent:#06b6d4;--accent-glow:rgba(6,182,212,0.15);--success:#10b981;--success-bg:rgba(16,185,129,0.1);--success-border:rgba(16,185,129,0.2);--warning:#f59e0b;--warning-bg:rgba(245,158,11,0.1);--warning-border:rgba(245,158,11,0.2);--danger:#ef4444;--danger-bg:rgba(239,68,68,0.1);--danger-border:rgba(239,68,68,0.2);--info:#3b82f6;--info-bg:rgba(59,130,246,0.1);--info-border:rgba(59,130,246,0.2);--syria:#ef4444;--syria-bg:rgba(239,68,68,0.08);--syria-border:rgba(239,68,68,0.2);--bg-body:#09090b;--bg-sidebar:rgba(24,24,27,0.8);--bg-sidebar-solid:#18181b;--bg-card:rgba(24,24,27,0.6);--bg-card-solid:#18181b;--bg-card-hover:rgba(39,39,42,0.8);--bg-input:rgba(39,39,42,0.6);--bg-input-solid:#27272a;--bg-dropdown:#27272a;--bg-elevated:rgba(39,39,42,0.9);--text-primary:#fafafa;--text-secondary:#a1a1aa;--text-muted:#71717a;--text-inverse:#09090b;--border-color:rgba(63,63,70,0.5);--border-subtle:rgba(63,63,70,0.3);--shadow-sm:0 1px 2px rgba(0,0,0,0.3);--shadow-md:0 4px 16px rgba(0,0,0,0.3);--shadow-lg:0 8px 32px rgba(0,0,0,0.4);--shadow-xl:0 16px 64px rgba(0,0,0,0.5);--shadow-glow:0 0 40px rgba(99,102,241,0.15);--overlay-bg:rgba(0,0,0,0.7);--gradient-subtle:linear-gradient(135deg,rgba(99,102,241,0.05),rgba(139,92,246,0.05));--gradient-card:linear-gradient(135deg,rgba(24,24,27,0.9),rgba(24,24,27,0.7));--gradient-primary:linear-gradient(135deg,#6366f1,#8b5cf6);--gradient-success:linear-gradient(135deg,#10b981,#06b6d4);--gradient-danger:linear-gradient(135deg,#ef4444,#f97316);--gradient-warm:linear-gradient(135deg,#f59e0b,#ef4444);--gradient-google:linear-gradient(135deg,#4285f4,#34a853)}
-        [data-theme="light"]{--primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#818cf8;--primary-glow:rgba(99,102,241,0.08);--primary-glow-strong:rgba(99,102,241,0.15);--secondary:#8b5cf6;--accent:#0891b2;--accent-glow:rgba(8,145,178,0.08);--success:#059669;--success-bg:rgba(5,150,105,0.06);--success-border:rgba(5,150,105,0.15);--warning:#d97706;--warning-bg:rgba(217,119,6,0.06);--warning-border:rgba(217,119,6,0.15);--danger:#dc2626;--danger-bg:rgba(220,38,38,0.06);--danger-border:rgba(220,38,38,0.15);--info:#2563eb;--info-bg:rgba(37,99,235,0.06);--info-border:rgba(37,99,235,0.15);--syria:#dc2626;--syria-bg:rgba(220,38,38,0.04);--syria-border:rgba(220,38,38,0.12);--bg-body:#f8fafc;--bg-sidebar:rgba(255,255,255,0.85);--bg-sidebar-solid:#ffffff;--bg-card:rgba(255,255,255,0.7);--bg-card-solid:#ffffff;--bg-card-hover:rgba(248,250,252,0.9);--bg-input:rgba(241,245,249,0.8);--bg-input-solid:#f1f5f9;--bg-dropdown:#ffffff;--bg-elevated:rgba(255,255,255,0.95);--text-primary:#0f172a;--text-secondary:#475569;--text-muted:#94a3b8;--text-inverse:#ffffff;--border-color:rgba(226,232,240,0.8);--border-subtle:rgba(226,232,240,0.5);--shadow-sm:0 1px 2px rgba(0,0,0,0.04);--shadow-md:0 4px 16px rgba(0,0,0,0.06);--shadow-lg:0 8px 32px rgba(0,0,0,0.08);--shadow-xl:0 16px 64px rgba(0,0,0,0.1);--shadow-glow:0 0 40px rgba(99,102,241,0.08);--overlay-bg:rgba(15,23,42,0.5);--gradient-subtle:linear-gradient(135deg,rgba(99,102,241,0.03),rgba(139,92,246,0.03));--gradient-card:linear-gradient(135deg,rgba(255,255,255,0.9),rgba(255,255,255,0.7));--gradient-primary:linear-gradient(135deg,#6366f1,#8b5cf6);--gradient-success:linear-gradient(135deg,#059669,#0891b2);--gradient-danger:linear-gradient(135deg,#dc2626,#ea580c);--gradient-warm:linear-gradient(135deg,#d97706,#dc2626);--gradient-google:linear-gradient(135deg,#4285f4,#34a853)}
+        [data-theme="dark"]{--primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#818cf8;--primary-glow:rgba(99,102,241,0.15);--primary-glow-strong:rgba(99,102,241,0.25);--secondary:#8b5cf6;--accent:#06b6d4;--success:#10b981;--success-bg:rgba(16,185,129,0.1);--success-border:rgba(16,185,129,0.2);--warning:#f59e0b;--warning-bg:rgba(245,158,11,0.1);--warning-border:rgba(245,158,11,0.2);--danger:#ef4444;--danger-bg:rgba(239,68,68,0.1);--danger-border:rgba(239,68,68,0.2);--info:#3b82f6;--info-bg:rgba(59,130,246,0.1);--info-border:rgba(59,130,246,0.2);--syria:#ef4444;--syria-bg:rgba(239,68,68,0.08);--syria-border:rgba(239,68,68,0.2);--bg-body:#09090b;--bg-sidebar-solid:#18181b;--bg-card:rgba(24,24,27,0.6);--bg-card-solid:#18181b;--bg-card-hover:rgba(39,39,42,0.8);--bg-input:rgba(39,39,42,0.6);--bg-input-solid:#27272a;--bg-dropdown:#27272a;--bg-elevated:rgba(39,39,42,0.9);--text-primary:#fafafa;--text-secondary:#a1a1aa;--text-muted:#71717a;--border-color:rgba(63,63,70,0.5);--border-subtle:rgba(63,63,70,0.3);--shadow-sm:0 1px 2px rgba(0,0,0,0.3);--shadow-md:0 4px 16px rgba(0,0,0,0.3);--shadow-lg:0 8px 32px rgba(0,0,0,0.4);--shadow-xl:0 16px 64px rgba(0,0,0,0.5);--overlay-bg:rgba(0,0,0,0.7);--gradient-subtle:linear-gradient(135deg,rgba(99,102,241,0.05),rgba(139,92,246,0.05));--gradient-primary:linear-gradient(135deg,#6366f1,#8b5cf6);--gradient-danger:linear-gradient(135deg,#ef4444,#f97316);--gradient-warm:linear-gradient(135deg,#f59e0b,#ef4444)}
+        [data-theme="light"]{--primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#818cf8;--primary-glow:rgba(99,102,241,0.08);--primary-glow-strong:rgba(99,102,241,0.15);--secondary:#8b5cf6;--accent:#0891b2;--success:#059669;--success-bg:rgba(5,150,105,0.06);--success-border:rgba(5,150,105,0.15);--warning:#d97706;--warning-bg:rgba(217,119,6,0.06);--warning-border:rgba(217,119,6,0.15);--danger:#dc2626;--danger-bg:rgba(220,38,38,0.06);--danger-border:rgba(220,38,38,0.15);--info:#2563eb;--info-bg:rgba(37,99,235,0.06);--info-border:rgba(37,99,235,0.15);--syria:#dc2626;--syria-bg:rgba(220,38,38,0.04);--syria-border:rgba(220,38,38,0.12);--bg-body:#f8fafc;--bg-sidebar-solid:#ffffff;--bg-card:rgba(255,255,255,0.7);--bg-card-solid:#ffffff;--bg-card-hover:rgba(248,250,252,0.9);--bg-input:rgba(241,245,249,0.8);--bg-input-solid:#f1f5f9;--bg-dropdown:#ffffff;--bg-elevated:rgba(255,255,255,0.95);--text-primary:#0f172a;--text-secondary:#475569;--text-muted:#94a3b8;--border-color:rgba(226,232,240,0.8);--border-subtle:rgba(226,232,240,0.5);--shadow-sm:0 1px 2px rgba(0,0,0,0.04);--shadow-md:0 4px 16px rgba(0,0,0,0.06);--shadow-lg:0 8px 32px rgba(0,0,0,0.08);--shadow-xl:0 16px 64px rgba(0,0,0,0.1);--overlay-bg:rgba(15,23,42,0.5);--gradient-subtle:linear-gradient(135deg,rgba(99,102,241,0.03),rgba(139,92,246,0.03));--gradient-primary:linear-gradient(135deg,#6366f1,#8b5cf6);--gradient-danger:linear-gradient(135deg,#dc2626,#ea580c);--gradient-warm:linear-gradient(135deg,#d97706,#dc2626)}
         *{box-sizing:border-box;margin:0;padding:0}
-        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-body);min-height:100vh;color:var(--text-secondary);transition:background var(--transition-speed),color var(--transition-speed);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 80% 50% at 50% -20%,var(--primary-glow),transparent),radial-gradient(ellipse 60% 40% at 100% 0%,rgba(139,92,246,0.06),transparent);pointer-events:none;z-index:0}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-body);min-height:100vh;color:var(--text-secondary);transition:background var(--transition-speed),color var(--transition-speed);-webkit-font-smoothing:antialiased;overflow-x:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 80% 50% at 50% -20%,var(--primary-glow),transparent);pointer-events:none;z-index:0}
+        input,textarea,select{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
         .app-container{display:grid;grid-template-columns:290px 1fr;min-height:100vh;position:relative;z-index:1}
         @media(max-width:1024px){.app-container{grid-template-columns:1fr}.sidebar{position:fixed;left:-310px;z-index:1000;transition:left 0.4s cubic-bezier(0.16,1,0.3,1)}.sidebar.open{left:0}.mobile-header{display:flex!important}}
-        .sidebar{background:var(--bg-sidebar-solid);border-right:1px solid var(--border-color);padding:28px 20px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;backdrop-filter:saturate(180%) blur(20px);z-index:10}
+        .sidebar{background:var(--bg-sidebar-solid);border-right:1px solid var(--border-color);padding:28px 20px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;z-index:10}
         .logo{display:flex;align-items:center;gap:14px;margin-bottom:36px;padding:0 4px}
         .logo-icon{width:46px;height:46px;background:var(--gradient-primary);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 12px rgba(99,102,241,0.3);position:relative;overflow:hidden}
-        .logo-icon::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.2),transparent);border-radius:inherit}
+        .logo-icon::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.2),transparent)}
         .logo-text h1{font-size:1.2rem;font-weight:800;color:var(--text-primary);letter-spacing:-0.03em}
         .logo-text span{font-size:0.65rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.5px;font-weight:600}
-        .theme-toggle{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--bg-input);border-radius:var(--radius-md);margin-bottom:28px;border:1px solid var(--border-subtle);transition:all 0.2s ease}
-        .theme-toggle:hover{border-color:var(--border-color)}
+        .theme-toggle{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--bg-input);border-radius:var(--radius-md);margin-bottom:28px;border:1px solid var(--border-subtle)}
         .theme-toggle span{font-size:0.82rem;color:var(--text-muted);font-weight:500}
         .theme-switch{position:relative;width:52px;height:28px;margin-left:auto;flex-shrink:0}
         .theme-switch input{opacity:0;width:0;height:0}
-        .theme-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#3f3f46;transition:0.4s cubic-bezier(0.16,1,0.3,1);border-radius:28px}
-        .theme-slider:before{position:absolute;content:"🌙";height:22px;width:22px;left:3px;bottom:3px;background:#fff;transition:0.4s cubic-bezier(0.16,1,0.3,1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+        .theme-slider{position:absolute;cursor:pointer;inset:0;background:#3f3f46;transition:0.4s;border-radius:28px}
+        .theme-slider:before{position:absolute;content:"🌙";height:22px;width:22px;left:3px;bottom:3px;background:#fff;transition:0.4s;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px}
         .theme-switch input:checked+.theme-slider{background:var(--primary)}
         .theme-switch input:checked+.theme-slider:before{transform:translateX(24px);content:"☀️"}
         .nav-section{margin-bottom:28px}
         .nav-label{font-size:0.65rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px;padding-left:14px}
-        .nav-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:var(--radius-sm);cursor:pointer;transition:all 0.2s ease;margin-bottom:4px;color:var(--text-secondary);font-weight:500;font-size:0.88rem;position:relative;overflow:hidden}
-        .nav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gradient-primary);border-radius:0 4px 4px 0;transition:width 0.2s ease}
+        .nav-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:var(--radius-sm);cursor:pointer;transition:all 0.2s;margin-bottom:4px;color:var(--text-secondary);font-weight:500;font-size:0.88rem;position:relative}
+        .nav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gradient-primary);border-radius:0 4px 4px 0;transition:width 0.2s}
         .nav-item:hover{background:var(--bg-input);color:var(--text-primary)}
         .nav-item.active{background:var(--primary-glow-strong);color:var(--primary-light);font-weight:600}
         .nav-item.active::before{width:3px}
-        .nav-item img{width:26px;height:18px;border-radius:3px;object-fit:cover;box-shadow:var(--shadow-sm)}
-        .nav-item .nav-icon{width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+        .nav-item img{width:26px;height:18px;border-radius:3px;object-fit:cover}
         .rates-panel{background:var(--gradient-subtle);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:22px;margin-top:auto}
         .rates-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
-        .rates-header h3{font-size:0.82rem;font-weight:700;color:var(--text-primary);letter-spacing:-0.01em}
-        .live-badge{display:flex;align-items:center;gap:6px;font-size:0.6rem;color:var(--success);font-weight:700;background:var(--success-bg);padding:4px 10px;border-radius:20px;border:1px solid var(--success-border);letter-spacing:0.5px}
+        .rates-header h3{font-size:0.82rem;font-weight:700;color:var(--text-primary)}
+        .live-badge{display:flex;align-items:center;gap:6px;font-size:0.6rem;color:var(--success);font-weight:700;background:var(--success-bg);padding:4px 10px;border-radius:20px;border:1px solid var(--success-border)}
         .live-badge::before{content:'';width:6px;height:6px;background:var(--success);border-radius:50%;animation:pulse 2s infinite}
         @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.7)}}
         .rate-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border-subtle)}
         .rate-row:last-child{border-bottom:none}
         .rate-row .currency{display:flex;align-items:center;gap:10px;font-size:0.78rem;color:var(--text-secondary);font-weight:500}
-        .rate-row .currency img{width:22px;height:15px;border-radius:2px;box-shadow:var(--shadow-sm)}
+        .rate-row .currency img{width:22px;height:15px;border-radius:2px}
         .rate-row .value{font-size:0.82rem;font-weight:700;color:var(--text-primary);font-family:'SF Mono','Fira Code',monospace}
-        .btn-sync-mini{width:100%;padding:12px;background:transparent;border:1px solid var(--border-color);color:var(--primary);border-radius:var(--radius-sm);cursor:pointer;font-size:0.78rem;font-weight:600;margin-top:16px;transition:all 0.25s ease;display:flex;align-items:center;justify-content:center;gap:8px;font-family:inherit}
-        .btn-sync-mini:hover{background:var(--primary-glow);border-color:var(--primary);transform:translateY(-1px)}
+        .btn-sync-mini{width:100%;padding:12px;background:transparent;border:1px solid var(--border-color);color:var(--primary);border-radius:var(--radius-sm);cursor:pointer;font-size:0.78rem;font-weight:600;margin-top:16px;transition:all 0.25s;display:flex;align-items:center;justify-content:center;gap:8px;font-family:inherit}
+        .btn-sync-mini:hover{background:var(--primary-glow);border-color:var(--primary)}
+        .auto-sync-info{display:flex;align-items:center;gap:6px;font-size:0.68rem;color:var(--text-muted);margin-top:10px;justify-content:center}
+        .auto-sync-info .dot{width:5px;height:5px;background:var(--success);border-radius:50%;animation:pulse 2s infinite}
+        .countdown{font-family:'SF Mono','Fira Code',monospace;color:var(--primary);font-weight:600}
         .main-content{padding:36px 40px;overflow-y:auto;position:relative}
         @media(max-width:768px){.main-content{padding:20px 16px}}
-        .mobile-header{display:none;justify-content:space-between;align-items:center;padding:16px 20px;background:var(--bg-sidebar);border-bottom:1px solid var(--border-color);position:sticky;top:0;z-index:100;backdrop-filter:saturate(180%) blur(20px)}
+        .mobile-header{display:none;justify-content:space-between;align-items:center;padding:16px 20px;background:var(--bg-sidebar-solid);border-bottom:1px solid var(--border-color);position:sticky;top:0;z-index:100}
         .mobile-header .logo{margin-bottom:0}
-        .btn-menu{width:44px;height:44px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-primary);font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}
-        .btn-menu:hover{background:var(--bg-card-hover)}
-        .sidebar-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:var(--overlay-bg);z-index:999;backdrop-filter:blur(4px)}
+        .btn-menu{width:44px;height:44px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-primary);font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+        .sidebar-overlay{display:none;position:fixed;inset:0;background:var(--overlay-bg);z-index:999}
         .sidebar-overlay.active{display:block}
         .top-bar{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:36px;flex-wrap:wrap;gap:16px}
-        .page-title h2{font-size:2.2rem;font-weight:800;color:var(--text-primary);margin-bottom:6px;letter-spacing:-0.04em;line-height:1.1;background:linear-gradient(135deg,var(--text-primary),var(--text-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-        .page-title p{color:var(--text-muted);font-size:0.95rem;font-weight:400}
-        .top-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-settings,.btn-api{padding:12px 22px;background:var(--bg-card);border:1px solid var(--border-color);color:var(--primary);border-radius:980px;cursor:pointer;font-weight:600;font-size:0.82rem;display:flex;align-items:center;gap:8px;transition:all 0.25s ease;backdrop-filter:blur(10px);box-shadow:var(--shadow-sm);font-family:inherit}
-        .btn-settings:hover,.btn-api:hover{background:var(--primary-glow);border-color:var(--primary);transform:translateY(-1px);box-shadow:var(--shadow-md)}
-        .btn-api{color:#4285f4}
-        .btn-api:hover{background:rgba(66,133,244,0.1);border-color:#4285f4}
+        .page-title h2{font-size:2.2rem;font-weight:800;color:var(--text-primary);margin-bottom:6px;letter-spacing:-0.04em;background:linear-gradient(135deg,var(--text-primary),var(--text-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .page-title p{color:var(--text-muted);font-size:0.95rem}
+        .btn-settings{padding:12px 22px;background:var(--bg-card);border:1px solid var(--border-color);color:var(--primary);border-radius:980px;cursor:pointer;font-weight:600;font-size:0.82rem;display:flex;align-items:center;gap:8px;transition:all 0.25s;font-family:inherit}
+        .btn-settings:hover{background:var(--primary-glow);border-color:var(--primary);transform:translateY(-1px)}
         .calc-container{display:grid;grid-template-columns:1fr 420px;gap:28px}
         @media(max-width:1200px){.calc-container{grid-template-columns:1fr}}
-        .calc-card{background:var(--bg-card);backdrop-filter:saturate(180%) blur(20px);border-radius:var(--radius-xl);padding:36px;border:1px solid var(--border-color);box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+        .calc-card{background:var(--bg-card);backdrop-filter:blur(20px);border-radius:var(--radius-xl);padding:36px;border:1px solid var(--border-color);box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
         .calc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--primary-glow-strong),transparent)}
-        .calc-card h3{font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:28px;display:flex;align-items:center;gap:12px;letter-spacing:-0.02em}
-        .calc-card h3 .icon{width:40px;height:40px;background:var(--gradient-primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 4px 12px rgba(99,102,241,0.25)}
+        .calc-card h3{font-size:1.15rem;font-weight:700;color:var(--text-primary);margin-bottom:28px;display:flex;align-items:center;gap:12px}
+        .calc-card h3 .icon{width:40px;height:40px;background:var(--gradient-primary);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
         .form-row{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:20px}
         @media(max-width:600px){.form-row{grid-template-columns:1fr}}
         .form-group{margin-bottom:22px}
-        .form-group.full{grid-column:1/-1}
         label{display:block;font-size:0.75rem;font-weight:600;color:var(--text-muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px}
-        input,select{width:100%;padding:14px 16px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-primary);font-size:0.95rem;font-weight:500;transition:all 0.25s ease;font-family:inherit}
-        input::placeholder{color:var(--text-muted);font-weight:400}
-        input:focus,select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-glow),var(--shadow-sm);background:var(--bg-input-solid)}
-        input:hover,select:hover{border-color:var(--border-color)}
+        input,select{width:100%;padding:14px 16px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-primary);font-size:0.95rem;font-weight:500;transition:all 0.25s;font-family:inherit}
+        input::placeholder{color:var(--text-muted)}
+        input:focus,select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-glow);background:var(--bg-input-solid)}
         select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2371717a' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:44px}
-        select option{background:var(--bg-dropdown);color:var(--text-primary);padding:12px}
-        .currency-input{display:flex;align-items:center;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);padding:0 16px;transition:all 0.25s ease}
-        .currency-input:focus-within{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-glow);background:var(--bg-input-solid)}
-        .currency-input:hover{border-color:var(--border-color)}
-        .currency-input img{width:32px;height:22px;border-radius:4px;object-fit:cover;box-shadow:var(--shadow-sm)}
+        select option{background:var(--bg-dropdown);color:var(--text-primary)}
+        .currency-input{display:flex;align-items:center;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);padding:0 16px;transition:all 0.25s}
+        .currency-input:focus-within{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-glow)}
+        .currency-input img{width:32px;height:22px;border-radius:4px;object-fit:cover}
         .currency-input select{border:none;background:transparent;padding:14px 12px;box-shadow:none}
         .currency-input select:focus{box-shadow:none}
         .mode-toggle{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--bg-input);padding:5px;border-radius:var(--radius-md);margin-bottom:28px;border:1px solid var(--border-subtle)}
         .mode-toggle.two-col{grid-template-columns:repeat(2,1fr)}
-        .mode-toggle.four-col{grid-template-columns:repeat(4,1fr)}
         .mode-toggle.five-col{grid-template-columns:repeat(5,1fr)}
-        @media(max-width:600px){.mode-toggle.four-col,.mode-toggle.five-col{grid-template-columns:repeat(3,1fr)}}
-        @media(max-width:420px){.mode-toggle.four-col,.mode-toggle.five-col{grid-template-columns:repeat(2,1fr)}}
-        .mode-btn{padding:12px 10px;background:transparent;border:none;border-radius:var(--radius-sm);color:var(--text-muted);font-size:0.78rem;font-weight:600;cursor:pointer;transition:all 0.25s cubic-bezier(0.16,1,0.3,1);display:flex;align-items:center;justify-content:center;gap:6px;flex-direction:column;position:relative;font-family:inherit}
+        @media(max-width:600px){.mode-toggle.five-col{grid-template-columns:repeat(3,1fr)}}
+        @media(max-width:420px){.mode-toggle.five-col{grid-template-columns:repeat(2,1fr)}}
+        .mode-btn{padding:12px 10px;background:transparent;border:none;border-radius:var(--radius-sm);color:var(--text-muted);font-size:0.78rem;font-weight:600;cursor:pointer;transition:all 0.25s;display:flex;align-items:center;justify-content:center;gap:6px;flex-direction:column;font-family:inherit}
         .mode-btn:hover{color:var(--text-primary);background:var(--bg-card-hover)}
         .mode-btn.active{background:var(--bg-card-solid);color:var(--text-primary);box-shadow:var(--shadow-md)}
         .mode-btn.syria-active{background:var(--syria);color:white;box-shadow:0 4px 12px rgba(239,68,68,0.3)}
-        .mode-btn img{width:22px;height:15px;border-radius:2px;box-shadow:var(--shadow-sm)}
+        .mode-btn img{width:22px;height:15px;border-radius:2px}
         .mode-btn .mode-label{font-size:0.68rem;opacity:0.8}
         .syria-section{background:var(--syria-bg);border:1px solid var(--syria-border);border-radius:var(--radius-lg);padding:28px;margin-bottom:20px;position:relative}
-        .syria-section::before{content:'🇸🇾 SYRIAN POUND TRANSFER';position:absolute;top:-12px;left:20px;background:var(--gradient-danger);color:white;font-size:0.62rem;font-weight:700;padding:5px 14px;border-radius:20px;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(239,68,68,0.3)}
+        .syria-section::before{content:'🇸🇾 SYRIAN POUND TRANSFER';position:absolute;top:-12px;left:20px;background:var(--gradient-danger);color:white;font-size:0.62rem;font-weight:700;padding:5px 14px;border-radius:20px}
         .syria-section label{color:var(--syria)}
-        .country-section{background:var(--info-bg);border:1px solid var(--info-border);border-radius:var(--radius-lg);padding:28px;margin-bottom:20px;position:relative}
+        .country-section{background:var(--info-bg);border:1px solid var(--info-border);border-radius:var(--radius-lg);padding:28px;margin-bottom:20px}
         .country-section label{color:var(--info)}
         .city-selector{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
         @media(max-width:600px){.city-selector{grid-template-columns:repeat(2,1fr)}}
-        .city-btn{padding:14px 12px;background:var(--bg-card-solid);border:1px solid var(--border-color);border-radius:var(--radius-sm);cursor:pointer;text-align:center;transition:all 0.25s ease}
-        .city-btn:hover{border-color:var(--primary);transform:translateY(-1px);box-shadow:var(--shadow-md)}
-        .city-btn.active{background:var(--primary);border-color:var(--primary);color:white;box-shadow:0 4px 12px rgba(99,102,241,0.3)}
+        .city-btn{padding:14px 12px;background:var(--bg-card-solid);border:1px solid var(--border-color);border-radius:var(--radius-sm);cursor:pointer;text-align:center;transition:all 0.25s}
+        .city-btn:hover{border-color:var(--primary);transform:translateY(-1px)}
+        .city-btn.active{background:var(--primary);border-color:var(--primary);color:white}
         .city-btn .city-name{font-weight:700;font-size:0.85rem;color:var(--text-primary)}
         .city-btn.active .city-name{color:white}
         .city-btn .city-rate{font-size:0.68rem;color:var(--text-muted);margin-top:4px}
@@ -119,18 +113,18 @@
         .syp-result-box{background:var(--syria-bg);border:1px solid var(--syria-border);padding:28px;border-radius:var(--radius-lg);margin:18px 0;text-align:center;position:relative;overflow:hidden}
         .syp-result-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-danger)}
         .syp-result-box .label{color:var(--syria);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
-        .syp-result-box .amount{color:var(--text-primary);font-size:2rem;font-weight:800;font-family:'SF Mono','Fira Code',monospace;letter-spacing:-0.02em}
+        .syp-result-box .amount{color:var(--text-primary);font-size:2rem;font-weight:800;font-family:'SF Mono','Fira Code',monospace}
         .syp-result-box .rate-info{font-size:0.75rem;color:var(--text-muted);margin-top:10px}
         .override-zone{background:var(--warning-bg);border:1px solid var(--warning-border);border-radius:var(--radius-lg);padding:28px;margin-top:24px;position:relative}
-        .override-zone::before{content:'✏️ MANUAL OVERRIDE';position:absolute;top:-12px;left:20px;background:var(--gradient-warm);color:white;font-size:0.62rem;font-weight:700;padding:5px 14px;border-radius:20px;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(245,158,11,0.3)}
+        .override-zone::before{content:'✏️ MANUAL OVERRIDE';position:absolute;top:-12px;left:20px;background:var(--gradient-warm);color:white;font-size:0.62rem;font-weight:700;padding:5px 14px;border-radius:20px}
         .override-zone label{color:var(--warning)}
         .override-zone input,.override-zone select{background:var(--bg-card-solid);border-color:var(--warning-border)}
-        .btn-reset{width:100%;padding:14px;background:transparent;border:1px solid var(--border-color);color:var(--text-muted);border-radius:var(--radius-sm);cursor:pointer;font-size:0.82rem;font-weight:600;margin-top:16px;transition:all 0.25s ease;font-family:inherit}
+        .btn-reset{width:100%;padding:14px;background:transparent;border:1px solid var(--border-color);color:var(--text-muted);border-radius:var(--radius-sm);cursor:pointer;font-size:0.82rem;font-weight:600;margin-top:16px;transition:all 0.25s;font-family:inherit}
         .btn-reset:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-glow)}
         .fee-tier-badge{display:inline-flex;align-items:center;gap:8px;font-size:0.72rem;font-weight:600;padding:8px 14px;border-radius:980px;margin-bottom:16px}
         .fee-tier-badge.auto{background:var(--info-bg);color:var(--info);border:1px solid var(--info-border)}
         .fee-tier-badge.manual{background:var(--warning-bg);color:var(--warning);border:1px solid var(--warning-border)}
-        .results-card{background:var(--bg-card);backdrop-filter:saturate(180%) blur(20px);border-radius:var(--radius-xl);padding:36px;border:1px solid var(--border-color);position:sticky;top:36px;box-shadow:var(--shadow-lg);overflow:hidden}
+        .results-card{background:var(--bg-card);backdrop-filter:blur(20px);border-radius:var(--radius-xl);padding:36px;border:1px solid var(--border-color);position:sticky;top:36px;box-shadow:var(--shadow-lg);overflow:hidden}
         .results-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--primary-glow-strong),transparent)}
         .results-card h3{font-size:1.1rem;font-weight:700;color:var(--text-primary);margin-bottom:28px;display:flex;align-items:center;gap:10px}
         .result-item{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--border-subtle)}
@@ -148,40 +142,32 @@
         .jod-box{background:var(--success-bg);border:1px solid var(--success-border);padding:18px 22px;border-radius:var(--radius-md);margin:16px 0;display:none}
         .jod-box .label{color:var(--success);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
         .jod-box .amount{color:var(--success);font-size:1.5rem;font-weight:800;font-family:'SF Mono','Fira Code',monospace}
-        .btn-receipt{width:100%;padding:16px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-md);color:white;font-size:0.92rem;font-weight:600;cursor:pointer;margin-top:20px;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.25s ease;backdrop-filter:blur(10px);position:relative;font-family:inherit}
-        .btn-receipt:hover{background:rgba(255,255,255,0.25);transform:translateY(-1px)}
-        .modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:var(--overlay-bg);backdrop-filter:blur(12px);z-index:1000;overflow-y:auto;padding:40px 20px}
-        .modal-overlay.active{display:block;animation:fadeIn 0.3s ease}
+        .btn-receipt{width:100%;padding:16px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-md);color:white;font-size:0.92rem;font-weight:600;cursor:pointer;margin-top:20px;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.25s;font-family:inherit}
+        .btn-receipt:hover{background:rgba(255,255,255,0.25)}
+        .modal-overlay{display:none;position:fixed;inset:0;background:var(--overlay-bg);backdrop-filter:blur(12px);z-index:1000;overflow-y:auto;padding:40px 20px}
+        .modal-overlay.active{display:block;animation:fadeIn 0.3s}
         @keyframes fadeIn{from{opacity:0}to{opacity:1}}
         .modal-container{max-width:1000px;margin:0 auto;background:var(--bg-card-solid);border-radius:var(--radius-xl);border:1px solid var(--border-color);overflow:hidden;animation:modalSlide 0.4s cubic-bezier(0.16,1,0.3,1);box-shadow:var(--shadow-xl)}
         @keyframes modalSlide{from{opacity:0;transform:translateY(30px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
         .modal-header{display:flex;justify-content:space-between;align-items:center;padding:24px 32px;border-bottom:1px solid var(--border-color);background:var(--bg-elevated)}
-        .modal-header h3{font-size:1.2rem;font-weight:700;color:var(--text-primary);display:flex;align-items:center;gap:12px;letter-spacing:-0.02em}
-        .modal-close{width:34px;height:34px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:50%;color:var(--text-muted);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}
-        .modal-close:hover{background:var(--danger);color:white;border-color:var(--danger);transform:rotate(90deg)}
+        .modal-header h3{font-size:1.2rem;font-weight:700;color:var(--text-primary);display:flex;align-items:center;gap:12px}
+        .modal-close{width:34px;height:34px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:50%;color:var(--text-muted);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+        .modal-close:hover{background:var(--danger);color:white;border-color:var(--danger)}
         .modal-body{padding:32px;max-height:70vh;overflow-y:auto}
         .modal-tabs{display:flex;gap:8px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--border-subtle);overflow-x:auto;flex-wrap:wrap}
-        .modal-tab{padding:10px 20px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:980px;color:var(--text-muted);font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.25s ease;white-space:nowrap;display:flex;align-items:center;gap:8px;font-family:inherit}
+        .modal-tab{padding:10px 20px;background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:980px;color:var(--text-muted);font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.25s;white-space:nowrap;display:flex;align-items:center;gap:8px;font-family:inherit}
         .modal-tab:hover{color:var(--text-primary);border-color:var(--border-color)}
-        .modal-tab.active{background:var(--gradient-primary);color:white;border-color:transparent;box-shadow:0 2px 8px rgba(99,102,241,0.3)}
+        .modal-tab.active{background:var(--gradient-primary);color:white;border-color:transparent}
         .modal-tab img{width:20px;height:14px;border-radius:2px}
         .settings-section{display:none}
         .settings-section.active{display:block}
-        .syria-rates-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-        @media(max-width:600px){.syria-rates-grid{grid-template-columns:1fr}}
-        .syria-city-card{background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:22px;transition:all 0.2s ease}
-        .syria-city-card:hover{border-color:var(--border-color);box-shadow:var(--shadow-md)}
-        .syria-city-card h4{font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-        .syria-city-card .rate-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-        .syria-city-card input{padding:10px;font-size:0.82rem}
-        .syria-city-card label{font-size:0.68rem}
         .sync-bar{display:flex;align-items:center;justify-content:space-between;padding:22px;background:var(--primary-glow);border-radius:var(--radius-lg);margin-bottom:28px;border:1px solid rgba(99,102,241,0.15);flex-wrap:wrap;gap:16px}
         .sync-info{display:flex;flex-direction:column;gap:4px}
         .sync-info .source-label{font-size:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;font-weight:600}
-        .sync-info .source-name{font-size:0.92rem;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:8px}
+        .sync-info .source-name{font-size:0.92rem;font-weight:700;color:var(--primary)}
         .sync-info .last-update{font-size:0.78rem;color:var(--text-muted)}
-        .btn-sync{padding:12px 24px;background:var(--gradient-primary);border:none;border-radius:980px;color:white;font-weight:600;font-size:0.82rem;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all 0.25s ease;box-shadow:0 2px 8px rgba(99,102,241,0.3);font-family:inherit}
-        .btn-sync:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(99,102,241,0.4)}
+        .btn-sync{padding:12px 24px;background:var(--gradient-primary);border:none;border-radius:980px;color:white;font-weight:600;font-size:0.82rem;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all 0.25s;font-family:inherit}
+        .btn-sync:hover{transform:translateY(-1px)}
         .btn-sync.loading{opacity:0.7;pointer-events:none}
         .spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,0.3);border-top-color:white;border-radius:50%;animation:spin 0.8s linear infinite;display:none}
         .btn-sync.loading .spinner{display:block}
@@ -191,18 +177,23 @@
         .rate-table th{text-align:left;padding:14px 12px;background:var(--bg-input);color:var(--text-muted);font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px}
         .rate-table th:first-child{border-radius:12px 0 0 12px}
         .rate-table th:last-child{border-radius:0 12px 12px 0}
-        .rate-table td{padding:12px;border-bottom:1px solid var(--border-subtle);vertical-align:middle}
+        .rate-table td{padding:12px;border-bottom:1px solid var(--border-subtle)}
         .rate-table tr:last-child td{border-bottom:none}
-        .rate-table tr:hover td{background:var(--primary-glow)}
         .rate-table input{padding:10px 12px;font-size:0.82rem}
         .currency-cell{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--text-secondary)}
-        .currency-cell img{width:34px;height:23px;border-radius:4px;object-fit:cover;box-shadow:var(--shadow-sm)}
+        .currency-cell img{width:34px;height:23px;border-radius:4px;object-fit:cover}
         .currency-cell span{font-weight:700;font-size:0.88rem}
         .input-spot{border-left:3px solid var(--primary)!important}
         .input-buy{border-left:3px solid var(--success)!important}
         .input-sell{border-left:3px solid var(--warning)!important}
-        .rules-country-card{background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:24px;margin-bottom:20px;transition:all 0.2s ease}
-        .rules-country-card:hover{border-color:var(--border-color)}
+        .syria-rates-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+        @media(max-width:600px){.syria-rates-grid{grid-template-columns:1fr}}
+        .syria-city-card{background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:22px}
+        .syria-city-card h4{font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:14px}
+        .syria-city-card .rate-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+        .syria-city-card input{padding:10px;font-size:0.82rem}
+        .syria-city-card label{font-size:0.68rem}
+        .rules-country-card{background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:24px;margin-bottom:20px}
         .rules-country-card h4{font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:16px;display:flex;align-items:center;gap:10px}
         .rules-country-card h4 img{width:28px;height:19px;border-radius:3px}
         .rule-tier{display:grid;grid-template-columns:auto 1fr 1fr 1fr auto;gap:10px;align-items:end;padding:14px;background:var(--bg-card-solid);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);margin-bottom:10px}
@@ -210,75 +201,35 @@
         .rule-tier label{font-size:0.65rem;margin-bottom:4px}
         .rule-tier input,.rule-tier select{padding:10px;font-size:0.82rem}
         .tier-num{display:flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--gradient-primary);border-radius:8px;color:white;font-weight:700;font-size:0.78rem;flex-shrink:0}
-        .btn-add-tier{padding:10px 18px;background:transparent;border:1px dashed var(--border-color);border-radius:var(--radius-sm);color:var(--text-muted);font-size:0.78rem;font-weight:600;cursor:pointer;transition:all 0.2s ease;display:flex;align-items:center;gap:6px;font-family:inherit;width:100%}
+        .btn-add-tier{padding:10px 18px;background:transparent;border:1px dashed var(--border-color);border-radius:var(--radius-sm);color:var(--text-muted);font-size:0.78rem;font-weight:600;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:6px;font-family:inherit;width:100%}
         .btn-add-tier:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-glow)}
-        .btn-remove-tier{width:32px;height:32px;background:var(--danger-bg);border:1px solid var(--danger-border);border-radius:8px;color:var(--danger);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:all 0.2s ease;flex-shrink:0}
+        .btn-remove-tier{width:32px;height:32px;background:var(--danger-bg);border:1px solid var(--danger-border);border-radius:8px;color:var(--danger);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:all 0.2s;flex-shrink:0}
         .btn-remove-tier:hover{background:var(--danger);color:white}
         .ps-city-selector{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
-        .api-setup-card{background:var(--bg-input);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:28px;margin-bottom:24px}
-        .api-setup-card h4{font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:6px;display:flex;align-items:center;gap:10px}
-        .api-setup-card p{font-size:0.82rem;color:var(--text-muted);margin-bottom:16px;line-height:1.6}
-        .api-source-selector{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
-        @media(max-width:600px){.api-source-selector{grid-template-columns:1fr}}
-        .api-source-btn{padding:16px;background:var(--bg-card-solid);border:2px solid var(--border-color);border-radius:var(--radius-md);cursor:pointer;text-align:center;transition:all 0.25s ease}
-        .api-source-btn:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-md)}
-        .api-source-btn.active{border-color:var(--primary);background:var(--primary-glow)}
-        .api-source-btn .source-icon{font-size:1.8rem;margin-bottom:8px}
-        .api-source-btn .source-title{font-weight:700;font-size:0.85rem;color:var(--text-primary);margin-bottom:4px}
-        .api-source-btn .source-desc{font-size:0.7rem;color:var(--text-muted)}
-        .api-source-btn .source-badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:0.6rem;font-weight:700;margin-top:6px}
-        .badge-free{background:var(--success-bg);color:var(--success);border:1px solid var(--success-border)}
-        .badge-google{background:rgba(66,133,244,0.1);color:#4285f4;border:1px solid rgba(66,133,244,0.2)}
-        .badge-premium{background:var(--warning-bg);color:var(--warning);border:1px solid var(--warning-border)}
-        .api-key-section{background:var(--bg-card-solid);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:24px;margin-top:16px}
-        .api-key-section h5{font-size:0.85rem;font-weight:700;color:var(--text-primary);margin-bottom:12px}
-        .api-key-input{display:flex;gap:10px;margin-bottom:12px}
-        .api-key-input input{flex:1;font-family:'SF Mono','Fira Code',monospace;font-size:0.82rem}
-        .btn-save-key{padding:14px 24px;background:var(--gradient-primary);border:none;border-radius:var(--radius-sm);color:white;font-weight:600;cursor:pointer;font-size:0.82rem;transition:all 0.25s ease;font-family:inherit;white-space:nowrap}
-        .btn-save-key:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(99,102,241,0.3)}
-        .setup-steps{margin-top:16px}
-        .setup-steps h5{font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:12px}
-        .step{display:flex;gap:12px;margin-bottom:12px;padding:12px;background:var(--bg-input);border-radius:var(--radius-sm)}
-        .step-num{width:28px;height:28px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;flex-shrink:0}
-        .step-text{font-size:0.8rem;color:var(--text-secondary);line-height:1.5}
-        .step-text code{background:var(--bg-card-solid);padding:2px 6px;border-radius:4px;font-family:'SF Mono','Fira Code',monospace;font-size:0.75rem;color:var(--primary);border:1px solid var(--border-subtle)}
-        .step-text a{color:var(--primary);text-decoration:none;font-weight:600}
-        .code-block{background:#1e1e2e;color:#cdd6f4;padding:16px;border-radius:var(--radius-sm);font-family:'SF Mono','Fira Code',monospace;font-size:0.72rem;overflow-x:auto;margin:12px 0;line-height:1.7;white-space:pre;border:1px solid rgba(99,102,241,0.2);position:relative}
-        .btn-copy{position:absolute;top:8px;right:8px;padding:6px 12px;background:rgba(99,102,241,0.2);border:1px solid rgba(99,102,241,0.3);border-radius:6px;color:#818cf8;font-size:0.65rem;font-weight:600;cursor:pointer;transition:all 0.2s ease;font-family:inherit}
-        .btn-copy:hover{background:rgba(99,102,241,0.4)}
-        .api-status{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:var(--radius-sm);margin-top:16px;font-size:0.82rem;font-weight:600}
-        .api-status.connected{background:var(--success-bg);color:var(--success);border:1px solid var(--success-border)}
-        .api-status.disconnected{background:var(--danger-bg);color:var(--danger);border:1px solid var(--danger-border)}
-        .api-status.pending{background:var(--warning-bg);color:var(--warning);border:1px solid var(--warning-border)}
         .receipt-modal .modal-body{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
         @media(max-width:768px){.receipt-modal .modal-body{grid-template-columns:1fr}}
         .receipt-section h4{font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border-subtle);display:flex;align-items:center;gap:8px}
-        .checkbox-group{display:flex;align-items:center;gap:14px;padding:20px;background:var(--bg-input);border-radius:var(--radius-md);cursor:pointer;transition:all 0.2s ease;grid-column:1/-1;border:1px solid var(--border-subtle)}
-        .checkbox-group:hover{background:var(--bg-card-hover);border-color:var(--border-color)}
-        .checkbox-group input[type="checkbox"]{width:20px;height:20px;cursor:pointer;accent-color:var(--primary)}
+        .checkbox-group{display:flex;align-items:center;gap:14px;padding:20px;background:var(--bg-input);border-radius:var(--radius-md);cursor:pointer;grid-column:1/-1;border:1px solid var(--border-subtle)}
+        .checkbox-group input[type="checkbox"]{width:20px;height:20px;accent-color:var(--primary)}
         .checkbox-group label{margin:0;text-transform:none;letter-spacing:0;font-size:0.88rem;color:var(--text-secondary);cursor:pointer;font-weight:500}
         .modal-footer{padding:24px 32px;border-top:1px solid var(--border-color);background:var(--bg-elevated)}
-        .btn-print{width:100%;padding:18px;background:var(--gradient-primary);border:none;border-radius:var(--radius-md);color:white;font-size:0.95rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.25s ease;box-shadow:0 4px 16px rgba(99,102,241,0.3);font-family:inherit}
-        .btn-print:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(99,102,241,0.4)}
-        .toast{position:fixed;bottom:30px;right:30px;background:var(--bg-card-solid);border:1px solid var(--border-color);padding:16px 24px;border-radius:var(--radius-md);box-shadow:var(--shadow-xl);display:none;align-items:center;gap:12px;z-index:2000;max-width:400px;backdrop-filter:blur(20px)}
-        .toast.show{display:flex;animation:toastIn 0.4s cubic-bezier(0.16,1,0.3,1)}
-        @keyframes toastIn{from{opacity:0;transform:translateY(20px) scale(0.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+        .btn-print{width:100%;padding:18px;background:var(--gradient-primary);border:none;border-radius:var(--radius-md);color:white;font-size:0.95rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.25s;font-family:inherit}
+        .btn-print:hover{transform:translateY(-1px)}
+        .toast{position:fixed;bottom:30px;right:30px;background:var(--bg-card-solid);border:1px solid var(--border-color);padding:16px 24px;border-radius:var(--radius-md);box-shadow:var(--shadow-xl);display:none;align-items:center;gap:12px;z-index:2000;max-width:400px}
+        .toast.show{display:flex;animation:toastIn 0.4s}
+        @keyframes toastIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
         .toast.success{border-color:var(--success-border)}
         .toast.error{border-color:var(--danger-border)}
         .toast .icon{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
         .toast.success .icon{background:var(--success-bg);color:var(--success)}
         .toast.error .icon{background:var(--danger-bg);color:var(--danger)}
         .toast .message{color:var(--text-primary);font-weight:500;font-size:0.88rem}
-        .tab-content{display:none}
-        .tab-content.active{display:block}
-        ::-webkit-scrollbar{width:6px;height:6px}
-        ::-webkit-scrollbar-track{background:transparent}
-        ::-webkit-scrollbar-thumb{background:var(--border-color);border-radius:3px}
+        .tab-content{display:none}.tab-content.active{display:block}
+        ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--border-color);border-radius:3px}
         .calc-card,.results-card{animation:cardIn 0.5s cubic-bezier(0.16,1,0.3,1)}
         @keyframes cardIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-        *:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
         #printableReceipt{display:none}
-        @media print{body *{visibility:hidden}#printableReceipt,#printableReceipt *{visibility:visible}#printableReceipt{display:block;position:absolute;left:0;top:0;width:100%;padding:40px;background:white!important;color:black!important}.print-header{text-align:center;border-bottom:2px solid #000;padding-bottom:20px;margin-bottom:30px}.print-header h2{font-size:1.6rem;margin-bottom:8px;color:black;font-weight:800}.print-header p{color:#333}.print-meta{display:flex;justify-content:space-between;margin-bottom:24px;color:black}.print-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}.print-box{border:1px solid #e2e8f0;padding:20px;border-radius:12px}.print-box h4{margin:0 0 16px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;text-transform:uppercase;font-size:0.75rem;color:#94a3b8;font-weight:700}.print-row{display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;color:black}.print-total{border-top:2px solid #000;margin-top:12px;padding-top:12px;font-weight:bold;font-size:1.1rem}.compliance{border:1px solid #e2e8f0;padding:16px;margin-bottom:24px;font-size:0.85rem;color:#475569;border-radius:12px}.signatures{display:flex;justify-content:space-between;margin-top:60px}.sig-line{width:40%;border-top:1px solid #000;text-align:center;padding-top:8px;font-weight:600;font-size:0.85rem}}
+        @media print{body *{visibility:hidden}#printableReceipt,#printableReceipt *{visibility:visible}#printableReceipt{display:block;position:absolute;left:0;top:0;width:100%;padding:40px;background:white!important;color:black!important}.print-header{text-align:center;border-bottom:2px solid #000;padding-bottom:20px;margin-bottom:30px}.print-header h2{font-size:1.6rem;margin-bottom:8px;color:black}.print-meta{display:flex;justify-content:space-between;margin-bottom:24px;color:black}.print-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}.print-box{border:1px solid #e2e8f0;padding:20px;border-radius:12px}.print-box h4{margin:0 0 16px;border-bottom:1px solid #e2e8f0;padding-bottom:8px;text-transform:uppercase;font-size:0.75rem;color:#94a3b8;font-weight:700}.print-row{display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;color:black}.print-total{border-top:2px solid #000;margin-top:12px;padding-top:12px;font-weight:bold;font-size:1.1rem}.signatures{display:flex;justify-content:space-between;margin-top:60px}.sig-line{width:40%;border-top:1px solid #000;text-align:center;padding-top:8px;font-weight:600;font-size:0.85rem}}
     </style>
 </head>
 <body>
@@ -293,1049 +244,438 @@
     <aside class="sidebar" id="sidebar">
         <div class="logo"><div class="logo-icon">💱</div><div class="logo-text"><h1>FinCalc Pro</h1><span>Premium Edition</span></div></div>
         <div class="theme-toggle"><span>🎨 Appearance</span><label class="theme-switch"><input type="checkbox" id="themeToggle" onchange="toggleTheme()"><span class="theme-slider"></span></label></div>
-        <nav class="nav-section">
-            <div class="nav-label">Cash</div>
-            <div class="nav-item active" data-tab="exchange" onclick="switchTab('exchange')"><img src="https://flagcdn.com/w40/ca.png" alt="CAD"><span>Cash Exchange</span></div>
-        </nav>
-        <nav class="nav-section">
-            <div class="nav-label">Transfers</div>
-            <div class="nav-item" data-tab="transfer_sy" onclick="switchTab('transfer_sy')"><img src="https://flagcdn.com/w40/sy.png" alt="SY"><span>Syria</span></div>
-            <div class="nav-item" data-tab="transfer_jo" onclick="switchTab('transfer_jo')"><img src="https://flagcdn.com/w40/jo.png" alt="JO"><span>Jordan</span></div>
-            <div class="nav-item" data-tab="transfer_lb" onclick="switchTab('transfer_lb')"><img src="https://flagcdn.com/w40/lb.png" alt="LB"><span>Lebanon</span></div>
-            <div class="nav-item" data-tab="transfer_ps" onclick="switchTab('transfer_ps')"><img src="https://flagcdn.com/w40/ps.png" alt="PS"><span>Palestine</span></div>
-            <div class="nav-item" data-tab="transfer_eg" onclick="switchTab('transfer_eg')"><img src="https://flagcdn.com/w40/eg.png" alt="EG"><span>Egypt</span></div>
-            <div class="nav-item" data-tab="transfer_iq" onclick="switchTab('transfer_iq')"><img src="https://flagcdn.com/w40/iq.png" alt="IQ"><span>Iraq</span></div>
+        <nav class="nav-section"><div class="nav-label">Cash</div><div class="nav-item active" data-tab="exchange" onclick="switchTab('exchange')"><img src="https://flagcdn.com/w40/ca.png"><span>Cash Exchange</span></div></nav>
+        <nav class="nav-section"><div class="nav-label">Transfers</div>
+            <div class="nav-item" data-tab="transfer_sy" onclick="switchTab('transfer_sy')"><img src="https://flagcdn.com/w40/sy.png"><span>Syria</span></div>
+            <div class="nav-item" data-tab="transfer_jo" onclick="switchTab('transfer_jo')"><img src="https://flagcdn.com/w40/jo.png"><span>Jordan</span></div>
+            <div class="nav-item" data-tab="transfer_lb" onclick="switchTab('transfer_lb')"><img src="https://flagcdn.com/w40/lb.png"><span>Lebanon</span></div>
+            <div class="nav-item" data-tab="transfer_ps" onclick="switchTab('transfer_ps')"><img src="https://flagcdn.com/w40/ps.png"><span>Palestine</span></div>
+            <div class="nav-item" data-tab="transfer_eg" onclick="switchTab('transfer_eg')"><img src="https://flagcdn.com/w40/eg.png"><span>Egypt</span></div>
+            <div class="nav-item" data-tab="transfer_iq" onclick="switchTab('transfer_iq')"><img src="https://flagcdn.com/w40/iq.png"><span>Iraq</span></div>
         </nav>
         <div class="rates-panel">
             <div class="rates-header"><h3>Quick Rates</h3><span class="live-badge" id="liveBadge" style="display:none;">LIVE</span></div>
-            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/us.png"> USD</span><span class="value" id="quick_usd">1.3500</span></div>
-            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/eu.png"> EUR</span><span class="value" id="quick_eur">1.4800</span></div>
-            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/gb.png"> GBP</span><span class="value" id="quick_gbp">1.7200</span></div>
-            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/jo.png"> JOD</span><span class="value" id="quick_jod">1.9100</span></div>
-            <button class="btn-sync-mini" onclick="fetchRates()"><span>🔄</span><span>Sync Rates</span></button>
+            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/us.png"> USD</span><span class="value" id="quick_usd">—</span></div>
+            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/eu.png"> EUR</span><span class="value" id="quick_eur">—</span></div>
+            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/gb.png"> GBP</span><span class="value" id="quick_gbp">—</span></div>
+            <div class="rate-row"><span class="currency"><img src="https://flagcdn.com/w20/jo.png"> JOD</span><span class="value" id="quick_jod">—</span></div>
+            <button class="btn-sync-mini" onclick="fetchRates()">🔄 Sync Now</button>
+            <div class="auto-sync-info"><span class="dot"></span><span>Auto-sync: <span class="countdown" id="countdown">60</span>s</span></div>
         </div>
     </aside>
 
     <main class="main-content">
         <div class="top-bar">
             <div class="page-title"><h2 id="pageTitle">Cash Exchange</h2><p id="pageSubtitle">Convert currencies at competitive rates</p></div>
-            <div class="top-actions">
-                <button class="btn-api" onclick="openApiModal()"><span>🔑</span><span>API Setup</span></button>
-                <button class="btn-settings" onclick="openSettingsModal()"><span>⚙️</span><span>Configure Rates</span></button>
-            </div>
+            <div class="top-actions"><button class="btn-settings" onclick="openSettingsModal()">⚙️ Configure Rates</button></div>
         </div>
-
         <div class="calc-container">
             <div class="calc-card">
                 <!-- EXCHANGE -->
                 <div id="tab_exchange" class="tab-content active">
                     <h3><span class="icon">💵</span> Exchange Details</h3>
-                    <div class="mode-toggle two-col">
-                        <button class="mode-btn active" id="ex_mode_buy" onclick="setExchangeMode('buy')"><span>📥</span> Customer Buys</button>
-                        <button class="mode-btn" id="ex_mode_sell" onclick="setExchangeMode('sell')"><span>📤</span> Customer Sells</button>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label>Currency</label><div class="currency-input"><img id="flag_ex_currency" src="https://flagcdn.com/w40/us.png"><select id="ex_currency" onchange="updateFlag('ex_currency');calcExchange()"><option value="USD" data-flag="us">USD — US Dollar</option><option value="EUR" data-flag="eu">EUR — Euro</option><option value="GBP" data-flag="gb">GBP — British Pound</option><option value="AED" data-flag="ae">AED — UAE Dirham</option><option value="MXN" data-flag="mx">MXN — Mexican Peso</option><option value="SAR" data-flag="sa">SAR — Saudi Riyal</option><option value="JOD" data-flag="jo">JOD — Jordanian Dinar</option><option value="TRY" data-flag="tr">TRY — Turkish Lira</option></select></div></div>
-                        <div class="form-group"><label>Amount</label><input type="number" id="ex_amount" placeholder="Enter amount..." oninput="calcExchange()"></div>
-                    </div>
+                    <div class="mode-toggle two-col"><button class="mode-btn active" id="ex_mode_buy" onclick="setExchangeMode('buy')">📥 Customer Buys</button><button class="mode-btn" id="ex_mode_sell" onclick="setExchangeMode('sell')">📤 Customer Sells</button></div>
+                    <div class="form-row"><div class="form-group"><label>Currency</label><div class="currency-input"><img id="flag_ex_currency" src="https://flagcdn.com/w40/us.png"><select id="ex_currency" onchange="updateFlag('ex_currency');calcExchange()"><option value="USD" data-flag="us">USD — US Dollar</option><option value="EUR" data-flag="eu">EUR — Euro</option><option value="GBP" data-flag="gb">GBP — British Pound</option><option value="AED" data-flag="ae">AED — UAE Dirham</option><option value="MXN" data-flag="mx">MXN — Mexican Peso</option><option value="SAR" data-flag="sa">SAR — Saudi Riyal</option><option value="JOD" data-flag="jo">JOD — Jordanian Dinar</option><option value="TRY" data-flag="tr">TRY — Turkish Lira</option></select></div></div><div class="form-group"><label>Amount</label><input type="number" id="ex_amount" placeholder="Enter amount..." oninput="calcExchange()"></div></div>
                 </div>
-
                 <!-- SYRIA -->
                 <div id="tab_transfer_sy" class="tab-content">
                     <h3><span class="icon">🇸🇾</span> Transfer to Syria</h3>
-                    <div class="mode-toggle five-col">
-                        <button class="mode-btn active" id="sy_mode_send_usd" onclick="setSyriaMode('send_usd')"><img src="https://flagcdn.com/w20/us.png"><span class="mode-label">Send USD</span></button>
-                        <button class="mode-btn" id="sy_mode_spend_cad" onclick="setSyriaMode('spend_cad')"><img src="https://flagcdn.com/w20/ca.png"><span class="mode-label">Have CAD</span></button>
-                        <button class="mode-btn" id="sy_mode_syp_cad" onclick="setSyriaMode('syp_cad')"><span>🇸🇾💵</span><span class="mode-label">SYP (CAD)</span></button>
-                        <button class="mode-btn" id="sy_mode_syp_usd" onclick="setSyriaMode('syp_usd')"><span>🇸🇾💲</span><span class="mode-label">SYP (USD)</span></button>
-                        <button class="mode-btn" id="sy_mode_receive_syp" onclick="setSyriaMode('receive_syp')"><span>🎯</span><span class="mode-label">Receive SYP</span></button>
-                    </div>
-                    <div id="syria_usd_section">
-                        <div class="form-group"><label id="lbl_sy_amount">Amount to Send (USD)</label><input type="number" id="sy_amount" placeholder="Enter amount..." oninput="handleSyriaAmountChange()"></div>
-                        <div id="sy_fee_tier_badge" class="fee-tier-badge auto" style="display:none;"><span id="sy_fee_tier_text">🤖 Auto</span></div>
-                        <div class="override-zone">
-                            <div class="form-row">
-                                <div class="form-group"><label>Fee Type</label><select id="sy_fee_type" onchange="markSyriaFeeManual();calcSyriaTransfer()"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div>
-                                <div class="form-group"><label>Fee Value</label><input type="number" id="sy_fee_val" value="20" oninput="markSyriaFeeManual();calcSyriaTransfer()"></div>
-                            </div>
-                            <div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="sy_rate" step="0.0001" oninput="isSyriaRateManual=true;calcSyriaTransfer()"></div>
-                            <button class="btn-reset" onclick="isSyriaFeeManual=false;isSyriaRateManual=false;handleSyriaAmountChange()">↺ Reset to Standard Rules</button>
-                        </div>
-                    </div>
-                    <div id="syria_syp_section" style="display:none;">
-                        <div class="syria-section"><label>Select City</label><div class="city-selector" id="citySelector"></div><div class="form-group" id="syp_give_group"><label id="lbl_syp_amount">Amount Customer Gives (CAD)</label><input type="number" id="syp_customer_amount" placeholder="Enter amount..." oninput="calcSYPTransfer()"></div><div class="form-group" id="syp_receive_group" style="display:none;"><label>Beneficiary Should Receive (SYP)</label><input type="number" id="syp_target_amount" placeholder="e.g. 1000000" oninput="calcReceiveSYP()"></div><div class="form-group" id="syp_pay_currency_group" style="display:none;"><label>Customer Pays In</label><select id="syp_pay_currency" onchange="calcReceiveSYP()"><option value="CAD">🇨🇦 CAD</option><option value="USD">🇺🇸 USD</option></select></div></div>
-                        <div class="syp-result-box" id="sypResultBox"><div class="label" id="syp_result_label">Beneficiary Receives</div><div class="amount" id="syp_beneficiary_amount">0 SYP</div><div class="rate-info" id="syp_rate_info">Rate: 0 SYP per CAD</div></div>
-                        <div class="syp-result-box" id="sypReverseResultBox" style="display:none;border-color:var(--primary);background:var(--primary-glow);"><div class="label" style="color:var(--primary);">Customer Must Pay</div><div class="amount" id="syp_customer_must_pay">$0.00</div><div class="rate-info" id="syp_reverse_rate_info">Including fees</div></div>
-                        <div class="override-zone" style="margin-top:16px;"><div class="form-row"><div class="form-group"><label>Fee (CAD)</label><input type="number" id="syp_fee" value="10" oninput="calcSYPTransferAny()"></div><div class="form-group"><label>Fee Threshold (CAD)</label><input type="number" id="syp_fee_threshold" value="500" oninput="calcSYPTransferAny()"></div></div><p style="font-size:0.78rem;color:var(--text-muted);margin-top:8px;">💡 Fee of <span id="fee_display">10</span> CAD applies when amount &lt; <span id="threshold_display">500</span> CAD</p></div>
-                    </div>
+                    <div class="mode-toggle five-col"><button class="mode-btn active" id="sy_mode_send_usd" onclick="setSyriaMode('send_usd')"><img src="https://flagcdn.com/w20/us.png"><span class="mode-label">Send USD</span></button><button class="mode-btn" id="sy_mode_spend_cad" onclick="setSyriaMode('spend_cad')"><img src="https://flagcdn.com/w20/ca.png"><span class="mode-label">Have CAD</span></button><button class="mode-btn" id="sy_mode_syp_cad" onclick="setSyriaMode('syp_cad')">🇸🇾💵<span class="mode-label">SYP(CAD)</span></button><button class="mode-btn" id="sy_mode_syp_usd" onclick="setSyriaMode('syp_usd')">🇸🇾💲<span class="mode-label">SYP(USD)</span></button><button class="mode-btn" id="sy_mode_receive_syp" onclick="setSyriaMode('receive_syp')">🎯<span class="mode-label">Receive SYP</span></button></div>
+                    <div id="syria_usd_section"><div class="form-group"><label id="lbl_sy_amount">Amount to Send (USD)</label><input type="number" id="sy_amount" placeholder="Enter amount..." oninput="handleSyriaAmountChange()"></div><div id="sy_fee_tier_badge" class="fee-tier-badge auto" style="display:none"><span id="sy_fee_tier_text">🤖 Auto</span></div><div class="override-zone"><div class="form-row"><div class="form-group"><label>Fee Type</label><select id="sy_fee_type" onchange="markSyriaFeeManual();calcSyriaTransfer()"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div><div class="form-group"><label>Fee Value</label><input type="number" id="sy_fee_val" value="20" oninput="markSyriaFeeManual();calcSyriaTransfer()"></div></div><div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="sy_rate" step="0.0001" oninput="isSyriaRateManual=true;calcSyriaTransfer()"></div><button class="btn-reset" onclick="isSyriaFeeManual=false;isSyriaRateManual=false;handleSyriaAmountChange()">↺ Reset to Standard Rules</button></div></div>
+                    <div id="syria_syp_section" style="display:none"><div class="syria-section"><label>Select City</label><div class="city-selector" id="citySelector"></div><div class="form-group" id="syp_give_group"><label id="lbl_syp_amount">Amount Customer Gives (CAD)</label><input type="number" id="syp_customer_amount" placeholder="Enter amount..." oninput="calcSYPTransfer()"></div><div class="form-group" id="syp_receive_group" style="display:none"><label>Beneficiary Should Receive (SYP)</label><input type="number" id="syp_target_amount" placeholder="e.g. 1000000" oninput="calcReceiveSYP()"></div><div class="form-group" id="syp_pay_currency_group" style="display:none"><label>Customer Pays In</label><select id="syp_pay_currency" onchange="calcReceiveSYP()"><option value="CAD">🇨🇦 CAD</option><option value="USD">🇺🇸 USD</option></select></div></div><div class="syp-result-box" id="sypResultBox"><div class="label" id="syp_result_label">Beneficiary Receives</div><div class="amount" id="syp_beneficiary_amount">0 SYP</div><div class="rate-info" id="syp_rate_info">Rate: 0 SYP per CAD</div></div><div class="syp-result-box" id="sypReverseResultBox" style="display:none;border-color:var(--primary);background:var(--primary-glow)"><div class="label" style="color:var(--primary)">Customer Must Pay</div><div class="amount" id="syp_customer_must_pay">$0.00</div><div class="rate-info" id="syp_reverse_rate_info">Including fees</div></div><div class="override-zone" style="margin-top:16px"><div class="form-row"><div class="form-group"><label>Fee (CAD)</label><input type="number" id="syp_fee" value="10" oninput="calcSYPTransferAny()"></div><div class="form-group"><label>Fee Threshold (CAD)</label><input type="number" id="syp_fee_threshold" value="500" oninput="calcSYPTransferAny()"></div></div><p style="font-size:0.78rem;color:var(--text-muted);margin-top:8px">💡 Fee of <span id="fee_display">10</span> CAD applies when amount &lt; <span id="threshold_display">500</span> CAD</p></div></div>
                 </div>
-
                 <!-- JORDAN -->
-                <div id="tab_transfer_jo" class="tab-content">
-                    <h3><span class="icon">🇯🇴</span> Transfer to Jordan</h3>
-                    <div class="mode-toggle">
-                        <button class="mode-btn active" id="jo_mode_send_usd" onclick="setCountryMode('JO','send_usd')"><span>Send USD</span><img src="https://flagcdn.com/w20/us.png"></button>
-                        <button class="mode-btn" id="jo_mode_spend_cad" onclick="setCountryMode('JO','spend_cad')"><span>Have CAD</span><img src="https://flagcdn.com/w20/ca.png"></button>
-                        <button class="mode-btn" id="jo_mode_send_jod" onclick="setCountryMode('JO','send_jod')"><span>Send JOD</span><img src="https://flagcdn.com/w20/jo.png"></button>
-                    </div>
-                    <div class="form-group"><label id="lbl_jo_amount">Amount to Send (USD)</label><input type="number" id="jo_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('JO')"></div>
-                    <div id="jo_fee_tier_badge" class="fee-tier-badge auto" style="display:none;"><span id="jo_fee_tier_text">🤖 Auto</span></div>
-                    <div class="override-zone">
-                        <div class="form-row">
-                            <div class="form-group"><label>Fee Type</label><select id="jo_fee_type" onchange="markCountryFeeManual('JO');calcCountryTransfer('JO')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div>
-                            <div class="form-group"><label>Fee Value</label><input type="number" id="jo_fee_val" placeholder="0" oninput="markCountryFeeManual('JO');calcCountryTransfer('JO')"></div>
-                        </div>
-                        <div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="jo_rate" step="0.0001" oninput="markCountryRateManual('JO')"></div>
-                        <div class="form-group"><label>USD → JOD Cross Rate</label><input type="number" id="cross_rate_jod" step="0.0001" value="1.4135" oninput="calcCountryTransfer('JO')"></div>
-                        <button class="btn-reset" onclick="resetCountryDefaults('JO')">↺ Reset to Standard Rules</button>
-                    </div>
-                </div>
-
+                <div id="tab_transfer_jo" class="tab-content"><h3><span class="icon">🇯🇴</span> Transfer to Jordan</h3><div class="mode-toggle"><button class="mode-btn active" id="jo_mode_send_usd" onclick="setCountryMode('JO','send_usd')">Send USD <img src="https://flagcdn.com/w20/us.png"></button><button class="mode-btn" id="jo_mode_spend_cad" onclick="setCountryMode('JO','spend_cad')">Have CAD <img src="https://flagcdn.com/w20/ca.png"></button><button class="mode-btn" id="jo_mode_send_jod" onclick="setCountryMode('JO','send_jod')">Send JOD <img src="https://flagcdn.com/w20/jo.png"></button></div><div class="form-group"><label id="lbl_jo_amount">Amount to Send (USD)</label><input type="number" id="jo_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('JO')"></div><div id="jo_fee_tier_badge" class="fee-tier-badge auto" style="display:none"><span id="jo_fee_tier_text">🤖 Auto</span></div><div class="override-zone"><div class="form-row"><div class="form-group"><label>Fee Type</label><select id="jo_fee_type" onchange="markCountryFeeManual('JO');calcCountryTransfer('JO')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div><div class="form-group"><label>Fee Value</label><input type="number" id="jo_fee_val" placeholder="0" oninput="markCountryFeeManual('JO');calcCountryTransfer('JO')"></div></div><div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="jo_rate" step="0.0001" oninput="markCountryRateManual('JO')"></div><div class="form-group"><label>USD → JOD Cross Rate</label><input type="number" id="cross_rate_jod" step="0.0001" value="1.4135" oninput="calcCountryTransfer('JO')"></div><button class="btn-reset" onclick="resetCountryDefaults('JO')">↺ Reset</button></div></div>
                 <!-- LEBANON -->
-                <div id="tab_transfer_lb" class="tab-content">
-                    <h3><span class="icon">🇱🇧</span> Transfer to Lebanon</h3>
-                    <div class="mode-toggle two-col">
-                        <button class="mode-btn active" id="lb_mode_send_usd" onclick="setCountryMode('LB','send_usd')"><span>Send USD</span><img src="https://flagcdn.com/w20/us.png"></button>
-                        <button class="mode-btn" id="lb_mode_spend_cad" onclick="setCountryMode('LB','spend_cad')"><span>Have CAD</span><img src="https://flagcdn.com/w20/ca.png"></button>
-                    </div>
-                    <div class="form-group"><label id="lbl_lb_amount">Amount to Send (USD)</label><input type="number" id="lb_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('LB')"></div>
-                    <div id="lb_fee_tier_badge" class="fee-tier-badge auto" style="display:none;"><span id="lb_fee_tier_text">🤖 Auto</span></div>
-                    <div class="override-zone">
-                        <div class="form-row">
-                            <div class="form-group"><label>Fee Type</label><select id="lb_fee_type" onchange="markCountryFeeManual('LB');calcCountryTransfer('LB')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div>
-                            <div class="form-group"><label>Fee Value</label><input type="number" id="lb_fee_val" placeholder="0" oninput="markCountryFeeManual('LB');calcCountryTransfer('LB')"></div>
-                        </div>
-                        <div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="lb_rate" step="0.0001" oninput="markCountryRateManual('LB')"></div>
-                        <button class="btn-reset" onclick="resetCountryDefaults('LB')">↺ Reset to Standard Rules</button>
-                    </div>
-                </div>
-
+                <div id="tab_transfer_lb" class="tab-content"><h3><span class="icon">🇱🇧</span> Transfer to Lebanon</h3><div class="mode-toggle two-col"><button class="mode-btn active" id="lb_mode_send_usd" onclick="setCountryMode('LB','send_usd')">Send USD <img src="https://flagcdn.com/w20/us.png"></button><button class="mode-btn" id="lb_mode_spend_cad" onclick="setCountryMode('LB','spend_cad')">Have CAD <img src="https://flagcdn.com/w20/ca.png"></button></div><div class="form-group"><label id="lbl_lb_amount">Amount to Send (USD)</label><input type="number" id="lb_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('LB')"></div><div id="lb_fee_tier_badge" class="fee-tier-badge auto" style="display:none"><span id="lb_fee_tier_text">🤖 Auto</span></div><div class="override-zone"><div class="form-row"><div class="form-group"><label>Fee Type</label><select id="lb_fee_type" onchange="markCountryFeeManual('LB');calcCountryTransfer('LB')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div><div class="form-group"><label>Fee Value</label><input type="number" id="lb_fee_val" placeholder="0" oninput="markCountryFeeManual('LB');calcCountryTransfer('LB')"></div></div><div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="lb_rate" step="0.0001" oninput="markCountryRateManual('LB')"></div><button class="btn-reset" onclick="resetCountryDefaults('LB')">↺ Reset</button></div></div>
                 <!-- PALESTINE -->
-                <div id="tab_transfer_ps" class="tab-content">
-                    <h3><span class="icon">🇵🇸</span> Transfer to Palestine</h3>
-                    <div class="country-section">
-                        <label style="color:var(--info);">Select Region</label>
-                        <div class="ps-city-selector" id="psCitySelector">
-                            <div class="city-btn active" onclick="selectPSCity('gaza',this)"><div class="city-name">Gaza</div><div class="city-rate">Strip</div></div>
-                            <div class="city-btn" onclick="selectPSCity('westbank',this)"><div class="city-name">West Bank</div><div class="city-rate">الضفة</div></div>
-                        </div>
-                    </div>
-                    <div class="mode-toggle two-col">
-                        <button class="mode-btn active" id="ps_mode_send_usd" onclick="setCountryMode('PS','send_usd')"><span>Send USD</span><img src="https://flagcdn.com/w20/us.png"></button>
-                        <button class="mode-btn" id="ps_mode_spend_cad" onclick="setCountryMode('PS','spend_cad')"><span>Have CAD</span><img src="https://flagcdn.com/w20/ca.png"></button>
-                    </div>
-                    <div class="form-group"><label id="lbl_ps_amount">Amount to Send (USD)</label><input type="number" id="ps_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('PS')"></div>
-                    <div id="ps_fee_tier_badge" class="fee-tier-badge auto" style="display:none;"><span id="ps_fee_tier_text">🤖 Auto</span></div>
-                    <div class="override-zone">
-                        <div class="form-row">
-                            <div class="form-group"><label>Fee Type</label><select id="ps_fee_type" onchange="markCountryFeeManual('PS');calcCountryTransfer('PS')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div>
-                            <div class="form-group"><label>Fee Value</label><input type="number" id="ps_fee_val" placeholder="0" oninput="markCountryFeeManual('PS');calcCountryTransfer('PS')"></div>
-                        </div>
-                        <div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="ps_rate" step="0.0001" oninput="markCountryRateManual('PS')"></div>
-                        <button class="btn-reset" onclick="resetCountryDefaults('PS')">↺ Reset to Standard Rules</button>
-                    </div>
-                </div>
-
+                <div id="tab_transfer_ps" class="tab-content"><h3><span class="icon">🇵🇸</span> Transfer to Palestine</h3><div class="country-section"><label style="color:var(--info)">Select Region</label><div class="ps-city-selector" id="psCitySelector"><div class="city-btn active" onclick="selectPSCity('gaza',this)"><div class="city-name">Gaza</div><div class="city-rate">Strip</div></div><div class="city-btn" onclick="selectPSCity('westbank',this)"><div class="city-name">West Bank</div><div class="city-rate">الضفة</div></div></div></div><div class="mode-toggle two-col"><button class="mode-btn active" id="ps_mode_send_usd" onclick="setCountryMode('PS','send_usd')">Send USD <img src="https://flagcdn.com/w20/us.png"></button><button class="mode-btn" id="ps_mode_spend_cad" onclick="setCountryMode('PS','spend_cad')">Have CAD <img src="https://flagcdn.com/w20/ca.png"></button></div><div class="form-group"><label id="lbl_ps_amount">Amount to Send (USD)</label><input type="number" id="ps_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('PS')"></div><div id="ps_fee_tier_badge" class="fee-tier-badge auto" style="display:none"><span id="ps_fee_tier_text">🤖 Auto</span></div><div class="override-zone"><div class="form-row"><div class="form-group"><label>Fee Type</label><select id="ps_fee_type" onchange="markCountryFeeManual('PS');calcCountryTransfer('PS')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div><div class="form-group"><label>Fee Value</label><input type="number" id="ps_fee_val" placeholder="0" oninput="markCountryFeeManual('PS');calcCountryTransfer('PS')"></div></div><div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="ps_rate" step="0.0001" oninput="markCountryRateManual('PS')"></div><button class="btn-reset" onclick="resetCountryDefaults('PS')">↺ Reset</button></div></div>
                 <!-- EGYPT -->
-                <div id="tab_transfer_eg" class="tab-content">
-                    <h3><span class="icon">🇪🇬</span> Transfer to Egypt</h3>
-                    <div class="mode-toggle two-col">
-                        <button class="mode-btn active" id="eg_mode_send_usd" onclick="setCountryMode('EG','send_usd')"><span>Send USD</span><img src="https://flagcdn.com/w20/us.png"></button>
-                        <button class="mode-btn" id="eg_mode_spend_cad" onclick="setCountryMode('EG','spend_cad')"><span>Have CAD</span><img src="https://flagcdn.com/w20/ca.png"></button>
-                    </div>
-                    <div class="form-group"><label id="lbl_eg_amount">Amount to Send (USD)</label><input type="number" id="eg_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('EG')"></div>
-                    <div id="eg_fee_tier_badge" class="fee-tier-badge auto" style="display:none;"><span id="eg_fee_tier_text">🤖 Auto</span></div>
-                    <div class="override-zone">
-                        <div class="form-row">
-                            <div class="form-group"><label>Fee Type</label><select id="eg_fee_type" onchange="markCountryFeeManual('EG');calcCountryTransfer('EG')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div>
-                            <div class="form-group"><label>Fee Value</label><input type="number" id="eg_fee_val" placeholder="0" oninput="markCountryFeeManual('EG');calcCountryTransfer('EG')"></div>
-                        </div>
-                        <div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="eg_rate" step="0.0001" oninput="markCountryRateManual('EG')"></div>
-                        <button class="btn-reset" onclick="resetCountryDefaults('EG')">↺ Reset to Standard Rules</button>
-                    </div>
-                </div>
-
+                <div id="tab_transfer_eg" class="tab-content"><h3><span class="icon">🇪🇬</span> Transfer to Egypt</h3><div class="mode-toggle two-col"><button class="mode-btn active" id="eg_mode_send_usd" onclick="setCountryMode('EG','send_usd')">Send USD <img src="https://flagcdn.com/w20/us.png"></button><button class="mode-btn" id="eg_mode_spend_cad" onclick="setCountryMode('EG','spend_cad')">Have CAD <img src="https://flagcdn.com/w20/ca.png"></button></div><div class="form-group"><label id="lbl_eg_amount">Amount to Send (USD)</label><input type="number" id="eg_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('EG')"></div><div id="eg_fee_tier_badge" class="fee-tier-badge auto" style="display:none"><span id="eg_fee_tier_text">🤖 Auto</span></div><div class="override-zone"><div class="form-row"><div class="form-group"><label>Fee Type</label><select id="eg_fee_type" onchange="markCountryFeeManual('EG');calcCountryTransfer('EG')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div><div class="form-group"><label>Fee Value</label><input type="number" id="eg_fee_val" placeholder="0" oninput="markCountryFeeManual('EG');calcCountryTransfer('EG')"></div></div><div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="eg_rate" step="0.0001" oninput="markCountryRateManual('EG')"></div><button class="btn-reset" onclick="resetCountryDefaults('EG')">↺ Reset</button></div></div>
                 <!-- IRAQ -->
-                <div id="tab_transfer_iq" class="tab-content">
-                    <h3><span class="icon">🇮🇶</span> Transfer to Iraq</h3>
-                    <div class="mode-toggle two-col">
-                        <button class="mode-btn active" id="iq_mode_send_usd" onclick="setCountryMode('IQ','send_usd')"><span>Send USD</span><img src="https://flagcdn.com/w20/us.png"></button>
-                        <button class="mode-btn" id="iq_mode_spend_cad" onclick="setCountryMode('IQ','spend_cad')"><span>Have CAD</span><img src="https://flagcdn.com/w20/ca.png"></button>
-                    </div>
-                    <div class="form-group"><label id="lbl_iq_amount">Amount to Send (USD)</label><input type="number" id="iq_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('IQ')"></div>
-                    <div id="iq_fee_tier_badge" class="fee-tier-badge auto" style="display:none;"><span id="iq_fee_tier_text">🤖 Auto</span></div>
-                    <div class="override-zone">
-                        <div class="form-row">
-                            <div class="form-group"><label>Fee Type</label><select id="iq_fee_type" onchange="markCountryFeeManual('IQ');calcCountryTransfer('IQ')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div>
-                            <div class="form-group"><label>Fee Value</label><input type="number" id="iq_fee_val" placeholder="0" oninput="markCountryFeeManual('IQ');calcCountryTransfer('IQ')"></div>
-                        </div>
-                        <div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="iq_rate" step="0.0001" oninput="markCountryRateManual('IQ')"></div>
-                        <button class="btn-reset" onclick="resetCountryDefaults('IQ')">↺ Reset to Standard Rules</button>
-                    </div>
-                </div>
+                <div id="tab_transfer_iq" class="tab-content"><h3><span class="icon">🇮🇶</span> Transfer to Iraq</h3><div class="mode-toggle two-col"><button class="mode-btn active" id="iq_mode_send_usd" onclick="setCountryMode('IQ','send_usd')">Send USD <img src="https://flagcdn.com/w20/us.png"></button><button class="mode-btn" id="iq_mode_spend_cad" onclick="setCountryMode('IQ','spend_cad')">Have CAD <img src="https://flagcdn.com/w20/ca.png"></button></div><div class="form-group"><label id="lbl_iq_amount">Amount to Send (USD)</label><input type="number" id="iq_amount" placeholder="Enter amount..." oninput="handleCountryAmountChange('IQ')"></div><div id="iq_fee_tier_badge" class="fee-tier-badge auto" style="display:none"><span id="iq_fee_tier_text">🤖 Auto</span></div><div class="override-zone"><div class="form-row"><div class="form-group"><label>Fee Type</label><select id="iq_fee_type" onchange="markCountryFeeManual('IQ');calcCountryTransfer('IQ')"><option value="fixed_cad">Fixed CAD</option><option value="fixed_usd">Fixed USD</option><option value="percent">% Commission</option></select></div><div class="form-group"><label>Fee Value</label><input type="number" id="iq_fee_val" placeholder="0" oninput="markCountryFeeManual('IQ');calcCountryTransfer('IQ')"></div></div><div class="form-group"><label>Exchange Rate (USD → CAD)</label><input type="number" id="iq_rate" step="0.0001" oninput="markCountryRateManual('IQ')"></div><button class="btn-reset" onclick="resetCountryDefaults('IQ')">↺ Reset</button></div></div>
             </div>
-
             <!-- RESULTS -->
             <div class="results-card">
                 <h3>📊 Calculation Summary</h3>
-                <div id="exchange_results">
-                    <div class="result-item"><span class="label">Spot Rate</span><span class="value" id="ex_res_spot">—</span></div>
-                    <div class="result-item"><span class="label">Margin Type</span><span class="value" id="ex_res_type">—</span></div>
-                    <div class="result-item"><span class="label">Margin Applied</span><span class="value" id="ex_res_margin">—</span></div>
-                    <div class="result-divider"></div>
-                    <div class="result-item highlight"><span class="label">Client Rate</span><span class="value" id="ex_res_rate">—</span></div>
-                </div>
-                <div id="transfer_results" style="display:none;">
-                    <div class="result-item"><span class="label">Base Amount</span><span class="value" id="tr_res_base">—</span></div>
-                    <div class="result-item"><span class="label">Fee</span><span class="value" id="tr_res_fee_display">—</span></div>
-                    <div class="result-item"><span class="label">Rate Used</span><span class="value" id="tr_res_rate_display">—</span></div>
-                    <div class="result-divider"></div>
-                    <div class="result-item"><span class="label">USD Subtotal</span><span class="value" id="tr_res_sub_usd">—</span></div>
-                    <div class="jod-box" id="res_jod_final_box"><div class="label">Beneficiary Gets (JOD)</div><div class="amount" id="res_jod_final">JOD 0.00</div></div>
-                    <div class="result-item" id="res_ps_city_row" style="display:none;"><span class="label">Region</span><span class="value" id="res_ps_city">—</span></div>
-                    <div class="result-item"><span class="label">CAD Value</span><span class="value" id="tr_res_cad_equiv">—</span></div>
-                    <div class="result-item"><span class="label">CAD Fees</span><span class="value" id="tr_res_cad_fees">—</span></div>
-                </div>
-                <div id="syria_results" style="display:none;">
-                    <div class="result-item"><span class="label">Base Amount</span><span class="value" id="sy_res_base">—</span></div>
-                    <div class="result-item"><span class="label">Fee</span><span class="value" id="sy_res_fee">—</span></div>
-                    <div class="result-item"><span class="label">Rate Used</span><span class="value" id="sy_res_rate">—</span></div>
-                    <div class="result-divider"></div>
-                    <div id="syp_result_row" style="display:none;"><div class="result-item syria-highlight"><span class="label">Beneficiary Gets (SYP)</span><span class="value" id="sy_res_syp">0 SYP</span></div><div class="result-item"><span class="label">City</span><span class="value" id="sy_res_city">—</span></div></div>
-                    <div class="result-item"><span class="label">CAD Value</span><span class="value" id="sy_res_cad">—</span></div>
-                </div>
-                <div class="result-total" id="resultTotal">
-                    <div class="label" id="lbl_total">Total Amount</div>
-                    <div class="amount" id="final_total">$0.00 CAD</div>
-                    <button class="btn-receipt" onclick="openReceiptModal()"><span>📝</span><span>Create Receipt</span></button>
-                </div>
+                <div id="exchange_results"><div class="result-item"><span class="label">Spot Rate</span><span class="value" id="ex_res_spot">—</span></div><div class="result-item"><span class="label">Margin Type</span><span class="value" id="ex_res_type">—</span></div><div class="result-item"><span class="label">Margin Applied</span><span class="value" id="ex_res_margin">—</span></div><div class="result-divider"></div><div class="result-item highlight"><span class="label">Client Rate</span><span class="value" id="ex_res_rate">—</span></div></div>
+                <div id="transfer_results" style="display:none"><div class="result-item"><span class="label">Base Amount</span><span class="value" id="tr_res_base">—</span></div><div class="result-item"><span class="label">Fee</span><span class="value" id="tr_res_fee_display">—</span></div><div class="result-item"><span class="label">Rate Used</span><span class="value" id="tr_res_rate_display">—</span></div><div class="result-divider"></div><div class="result-item"><span class="label">USD Subtotal</span><span class="value" id="tr_res_sub_usd">—</span></div><div class="jod-box" id="res_jod_final_box"><div class="label">Beneficiary Gets (JOD)</div><div class="amount" id="res_jod_final">JOD 0.00</div></div><div class="result-item" id="res_ps_city_row" style="display:none"><span class="label">Region</span><span class="value" id="res_ps_city">—</span></div><div class="result-item"><span class="label">CAD Value</span><span class="value" id="tr_res_cad_equiv">—</span></div><div class="result-item"><span class="label">CAD Fees</span><span class="value" id="tr_res_cad_fees">—</span></div></div>
+                <div id="syria_results" style="display:none"><div class="result-item"><span class="label">Base Amount</span><span class="value" id="sy_res_base">—</span></div><div class="result-item"><span class="label">Fee</span><span class="value" id="sy_res_fee">—</span></div><div class="result-item"><span class="label">Rate Used</span><span class="value" id="sy_res_rate">—</span></div><div class="result-divider"></div><div id="syp_result_row" style="display:none"><div class="result-item syria-highlight"><span class="label">Beneficiary Gets (SYP)</span><span class="value" id="sy_res_syp">0 SYP</span></div><div class="result-item"><span class="label">City</span><span class="value" id="sy_res_city">—</span></div></div><div class="result-item"><span class="label">CAD Value</span><span class="value" id="sy_res_cad">—</span></div></div>
+                <div class="result-total" id="resultTotal"><div class="label" id="lbl_total">Total Amount</div><div class="amount" id="final_total">$0.00 CAD</div><button class="btn-receipt" onclick="openReceiptModal()">📝 Create Receipt</button></div>
             </div>
         </div>
     </main>
 </div>
 
-<!-- API MODAL -->
-<div class="modal-overlay" id="apiModal">
-    <div class="modal-container" style="max-width:750px;">
-        <div class="modal-header"><h3>🔑 API Configuration</h3><button class="modal-close" onclick="closeApiModal()">×</button></div>
-        <div class="modal-body">
-            <div class="api-setup-card">
-                <h4>📡 Select Rate Source</h4>
-                <p>Choose how you want to fetch live exchange rates.</p>
-                <div class="api-source-selector">
-                    <div class="api-source-btn" id="src_free" onclick="selectSource('free')"><div class="source-icon">🆓</div><div class="source-title">Free API</div><div class="source-desc">ExchangeRate-API</div><span class="source-badge badge-free">FREE</span></div>
-                    <div class="api-source-btn active" id="src_google" onclick="selectSource('google')"><div class="source-icon">📊</div><div class="source-title">Google Sheets</div><div class="source-desc">Via Apps Script</div><span class="source-badge badge-google">RECOMMENDED</span></div>
-                    <div class="api-source-btn" id="src_api_key" onclick="selectSource('api_key')"><div class="source-icon">🔐</div><div class="source-title">Custom API Key</div><div class="source-desc">Various Providers</div><span class="source-badge badge-premium">API KEY</span></div>
-                </div>
-            </div>
-            <div id="setup_google" class="api-key-section"><h5>📊 Google Sheets + Apps Script</h5><p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:16px;">Uses GOOGLEFINANCE() exposed via Apps Script.</p><div class="setup-steps"><h5>Setup:</h5><div class="step"><div class="step-num">1</div><div class="step-text">Create Google Sheet with currencies + <code>=1/GOOGLEFINANCE("CAD"+A2)</code></div></div><div class="step"><div class="step-num">2</div><div class="step-text"><strong>Extensions → Apps Script</strong>, deploy as Web App ("Anyone" access)</div></div><div class="step"><div class="step-num">3</div><div class="step-text">Paste URL below:</div></div></div><div class="api-key-input"><input type="url" id="google_script_url" placeholder="https://script.google.com/macros/s/.../exec"><button class="btn-save-key" onclick="saveGoogleUrl()">Save & Test</button></div><div class="api-status" id="google_status" style="display:none;"></div></div>
-            <div id="setup_free" class="api-key-section" style="display:none;"><h5>🆓 Free ExchangeRate-API</h5><div class="api-status connected">✅ Ready to use</div></div>
-            <div id="setup_api_key" class="api-key-section" style="display:none;"><h5>🔐 Custom API Key</h5><div class="form-group"><label>Provider</label><select id="api_provider"><option value="exchangerate">ExchangeRate-API</option><option value="openexchange">Open Exchange Rates</option><option value="currencylayer">CurrencyLayer</option></select></div><div class="api-key-input"><input type="text" id="custom_api_key" placeholder="Enter API key..."><button class="btn-save-key" onclick="saveCustomKey()">Save & Test</button></div><div class="api-status" id="custom_status" style="display:none;"></div></div>
-        </div>
-    </div>
-</div>
+<!-- SETTINGS -->
+<div class="modal-overlay" id="settingsModal"><div class="modal-container"><div class="modal-header"><h3>⚙️ Rate Configuration</h3><button class="modal-close" onclick="closeSettingsModal()">×</button></div><div class="modal-body"><div class="modal-tabs" id="settingsTabsContainer"><button class="modal-tab active" onclick="switchSettingsTab('rates',this)">💱 Exchange Rates</button><button class="modal-tab" onclick="switchSettingsTab('rules',this)">📋 Fee Rules</button><button class="modal-tab" onclick="switchSettingsTab('syria',this)"><img src="https://flagcdn.com/w20/sy.png"> Syria Cities</button><button class="modal-tab" onclick="switchSettingsTab('palestine',this)"><img src="https://flagcdn.com/w20/ps.png"> Palestine</button></div>
+<div class="settings-section active" id="settings_rates"><div class="sync-bar"><div class="sync-info"><span class="source-label">Source</span><span class="source-name" id="currentSourceName">📊 Google Finance (Auto)</span><span class="last-update" id="lastUpdated">Syncing on load...</span></div><button class="btn-sync" onclick="fetchRates()" id="btnSync"><span class="btn-text">🔄 Fetch Now</span><span class="spinner"></span></button></div>
+<table class="rate-table"><thead><tr><th>Currency</th><th>Spot (CAD)</th><th>Buy Margin</th><th>Sell Margin</th></tr></thead><tbody>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/us.png"><span>USD</span></div></td><td><input type="number" id="spot_usd" class="input-spot" step="0.0001" value="1.3500" oninput="recalcAll()"></td><td><input type="number" id="margin_usd_buy" class="input-buy" step="0.001" value="0.02" oninput="recalcAll()"></td><td><input type="number" id="margin_usd_sell" class="input-sell" step="0.001" value="0.02" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/eu.png"><span>EUR</span></div></td><td><input type="number" id="spot_eur" class="input-spot" step="0.0001" value="1.4800" oninput="recalcAll()"></td><td><input type="number" id="margin_eur_buy" class="input-buy" step="0.1" value="2.5" oninput="recalcAll()"></td><td><input type="number" id="margin_eur_sell" class="input-sell" step="0.1" value="2.5" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/gb.png"><span>GBP</span></div></td><td><input type="number" id="spot_gbp" class="input-spot" step="0.0001" value="1.7200" oninput="recalcAll()"></td><td><input type="number" id="margin_gbp_buy" class="input-buy" step="0.1" value="2.0" oninput="recalcAll()"></td><td><input type="number" id="margin_gbp_sell" class="input-sell" step="0.1" value="2.0" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/ae.png"><span>AED</span></div></td><td><input type="number" id="spot_aed" class="input-spot" step="0.0001" value="0.3680" oninput="recalcAll()"></td><td><input type="number" id="margin_aed_buy" class="input-buy" step="0.1" value="3.0" oninput="recalcAll()"></td><td><input type="number" id="margin_aed_sell" class="input-sell" step="0.1" value="3.0" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/jo.png"><span>JOD</span></div></td><td><input type="number" id="spot_jod" class="input-spot" step="0.0001" value="1.9100" oninput="recalcAll()"></td><td><input type="number" id="margin_jod_buy" class="input-buy" step="0.1" value="3.0" oninput="recalcAll()"></td><td><input type="number" id="margin_jod_sell" class="input-sell" step="0.1" value="3.0" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/mx.png"><span>MXN</span></div></td><td><input type="number" id="spot_mxn" class="input-spot" step="0.0001" value="0.0780" oninput="recalcAll()"></td><td><input type="number" id="margin_mxn_buy" class="input-buy" step="0.1" value="4.0" oninput="recalcAll()"></td><td><input type="number" id="margin_mxn_sell" class="input-sell" step="0.1" value="4.0" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/tr.png"><span>TRY</span></div></td><td><input type="number" id="spot_try" class="input-spot" step="0.0001" value="0.0420" oninput="recalcAll()"></td><td><input type="number" id="margin_try_buy" class="input-buy" step="0.1" value="5.0" oninput="recalcAll()"></td><td><input type="number" id="margin_try_sell" class="input-sell" step="0.1" value="5.0" oninput="recalcAll()"></td></tr>
+<tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/sa.png"><span>SAR</span></div></td><td><input type="number" id="spot_sar" class="input-spot" step="0.0001" value="0.3600" oninput="recalcAll()"></td><td><input type="number" id="margin_sar_buy" class="input-buy" step="0.1" value="3.0" oninput="recalcAll()"></td><td><input type="number" id="margin_sar_sell" class="input-sell" step="0.1" value="3.0" oninput="recalcAll()"></td></tr>
+</tbody></table></div>
+<div class="settings-section" id="settings_rules"><div style="background:var(--info-bg);border:1px solid var(--info-border);border-radius:var(--radius-lg);padding:22px;margin-bottom:24px"><h4 style="color:var(--info);margin:0 0 8px;font-size:0.95rem;font-weight:700">📋 Auto-Tiered Fee Rules</h4><p style="font-size:0.82rem;color:var(--text-muted);margin:0">Tiers matched by <strong>USD amount</strong> top-down.</p></div><div id="rulesContainer"></div></div>
+<div class="settings-section" id="settings_syria"><div style="background:var(--syria-bg);border:1px solid var(--syria-border);border-radius:var(--radius-lg);padding:22px;margin-bottom:24px"><h4 style="color:var(--syria);margin:0 0 8px">🇸🇾 SYP Rates by City</h4></div><div class="syria-rates-grid" id="syriaRatesGrid"></div></div>
+<div class="settings-section" id="settings_palestine"><div style="background:var(--info-bg);border:1px solid var(--info-border);border-radius:var(--radius-lg);padding:22px;margin-bottom:24px"><h4 style="color:var(--info);margin:0 0 8px">🇵🇸 Palestine Regions</h4></div><div id="palestineRulesContainer"></div></div>
+</div></div></div>
 
-<!-- SETTINGS MODAL -->
-<div class="modal-overlay" id="settingsModal">
-    <div class="modal-container">
-        <div class="modal-header"><h3>⚙️ Rate Configuration</h3><button class="modal-close" onclick="closeSettingsModal()">×</button></div>
-        <div class="modal-body">
-            <div class="modal-tabs" id="settingsTabsContainer">
-                <button class="modal-tab active" onclick="switchSettingsTab('rates',this)">💱 Exchange Rates</button>
-                <button class="modal-tab" onclick="switchSettingsTab('rules',this)">📋 Fee Rules</button>
-                <button class="modal-tab" onclick="switchSettingsTab('syria',this)"><img src="https://flagcdn.com/w20/sy.png"> Syria Cities</button>
-                <button class="modal-tab" onclick="switchSettingsTab('palestine',this)"><img src="https://flagcdn.com/w20/ps.png"> Palestine Regions</button>
-            </div>
-            <div class="settings-section active" id="settings_rates">
-                <div class="sync-bar"><div class="sync-info"><span class="source-label">Current Source</span><span class="source-name" id="currentSourceName">🆓 Free API</span><span class="last-update" id="lastUpdated">Last sync: Never</span></div><button class="btn-sync" onclick="fetchRates()" id="btnSync"><span class="btn-text">🔄 Fetch Live Rates</span><span class="spinner"></span></button></div>
-                <table class="rate-table"><thead><tr><th>Currency</th><th>Spot Rate (CAD)</th><th>Buy Margin</th><th>Sell Margin</th></tr></thead><tbody>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/us.png"><span>USD</span></div></td><td><input type="number" id="spot_usd" class="input-spot" step="0.0001" value="1.3500" oninput="recalcAll()"></td><td><input type="number" id="margin_usd_buy" class="input-buy" step="0.001" value="0.02" oninput="recalcAll()"></td><td><input type="number" id="margin_usd_sell" class="input-sell" step="0.001" value="0.02" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/eu.png"><span>EUR</span></div></td><td><input type="number" id="spot_eur" class="input-spot" step="0.0001" value="1.4800" oninput="recalcAll()"></td><td><input type="number" id="margin_eur_buy" class="input-buy" step="0.1" value="2.5" oninput="recalcAll()"></td><td><input type="number" id="margin_eur_sell" class="input-sell" step="0.1" value="2.5" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/gb.png"><span>GBP</span></div></td><td><input type="number" id="spot_gbp" class="input-spot" step="0.0001" value="1.7200" oninput="recalcAll()"></td><td><input type="number" id="margin_gbp_buy" class="input-buy" step="0.1" value="2.0" oninput="recalcAll()"></td><td><input type="number" id="margin_gbp_sell" class="input-sell" step="0.1" value="2.0" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/ae.png"><span>AED</span></div></td><td><input type="number" id="spot_aed" class="input-spot" step="0.0001" value="0.3680" oninput="recalcAll()"></td><td><input type="number" id="margin_aed_buy" class="input-buy" step="0.1" value="3.0" oninput="recalcAll()"></td><td><input type="number" id="margin_aed_sell" class="input-sell" step="0.1" value="3.0" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/jo.png"><span>JOD</span></div></td><td><input type="number" id="spot_jod" class="input-spot" step="0.0001" value="1.9100" oninput="recalcAll()"></td><td><input type="number" id="margin_jod_buy" class="input-buy" step="0.1" value="3.0" oninput="recalcAll()"></td><td><input type="number" id="margin_jod_sell" class="input-sell" step="0.1" value="3.0" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/mx.png"><span>MXN</span></div></td><td><input type="number" id="spot_mxn" class="input-spot" step="0.0001" value="0.0780" oninput="recalcAll()"></td><td><input type="number" id="margin_mxn_buy" class="input-buy" step="0.1" value="4.0" oninput="recalcAll()"></td><td><input type="number" id="margin_mxn_sell" class="input-sell" step="0.1" value="4.0" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/tr.png"><span>TRY</span></div></td><td><input type="number" id="spot_try" class="input-spot" step="0.0001" value="0.0420" oninput="recalcAll()"></td><td><input type="number" id="margin_try_buy" class="input-buy" step="0.1" value="5.0" oninput="recalcAll()"></td><td><input type="number" id="margin_try_sell" class="input-sell" step="0.1" value="5.0" oninput="recalcAll()"></td></tr>
-                    <tr><td><div class="currency-cell"><img src="https://flagcdn.com/w40/sa.png"><span>SAR</span></div></td><td><input type="number" id="spot_sar" class="input-spot" step="0.0001" value="0.3600" oninput="recalcAll()"></td><td><input type="number" id="margin_sar_buy" class="input-buy" step="0.1" value="3.0" oninput="recalcAll()"></td><td><input type="number" id="margin_sar_sell" class="input-sell" step="0.1" value="3.0" oninput="recalcAll()"></td></tr>
-                </tbody></table>
-            </div>
-            <div class="settings-section" id="settings_rules">
-                <div style="background:var(--info-bg);border:1px solid var(--info-border);border-radius:var(--radius-lg);padding:22px;margin-bottom:24px;"><h4 style="color:var(--info);margin:0 0 8px;font-size:0.95rem;font-weight:700;">📋 Auto-Tiered Fee Rules</h4><p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Configure fee tiers per country. Tiers are matched top-down by the <strong>USD amount</strong> — first matching tier wins. Use <code>999999</code> for unlimited.</p></div>
-                <div id="rulesContainer"></div>
-            </div>
-            <div class="settings-section" id="settings_syria">
-                <div style="background:var(--syria-bg);border:1px solid var(--syria-border);border-radius:var(--radius-lg);padding:22px;margin-bottom:24px;"><h4 style="color:var(--syria);margin:0 0 8px;font-size:0.95rem;font-weight:700;">🇸🇾 Syrian Pound (SYP) Rates by City</h4><p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Configure CAD/SYP and USD/SYP rates for each city.</p></div>
-                <div class="syria-rates-grid" id="syriaRatesGrid"></div>
-            </div>
-            <div class="settings-section" id="settings_palestine">
-                <div style="background:var(--info-bg);border:1px solid var(--info-border);border-radius:var(--radius-lg);padding:22px;margin-bottom:24px;"><h4 style="color:var(--info);margin:0 0 8px;font-size:0.95rem;font-weight:700;">🇵🇸 Palestine Region Configuration</h4><p style="font-size:0.82rem;color:var(--text-muted);margin:0;">Separate fee tiers for Gaza and West Bank.</p></div>
-                <div id="palestineRulesContainer"></div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- RECEIPT -->
+<div class="modal-overlay receipt-modal" id="receiptModal"><div class="modal-container"><div class="modal-header"><h3>📋 Receipt & KYC</h3><button class="modal-close" onclick="closeReceiptModal()">×</button></div><div class="modal-body"><div class="receipt-section"><h4>👤 Client</h4><div class="form-group"><label>Full Name</label><input type="text" id="kyc_name" placeholder="Full name..."></div><div class="form-group"><label>Address</label><input type="text" id="kyc_address" placeholder="Address..."></div><div class="form-row"><div class="form-group"><label>DOB</label><input type="date" id="kyc_dob"></div><div class="form-group"><label>Occupation</label><input type="text" id="kyc_occupation" placeholder="Occupation..."></div></div></div><div class="receipt-section"><h4>🪪 ID</h4><div class="form-group"><label>ID Type</label><select id="kyc_id_type"><option>Driver's License</option><option>Passport</option><option>PR Card</option></select></div><div class="form-row"><div class="form-group"><label>ID Number</label><input type="text" id="kyc_id_num" placeholder="ID#"></div><div class="form-group"><label>Expiry</label><input type="date" id="kyc_expiry"></div></div><div class="form-group"><label>Issued</label><input type="text" id="kyc_issue_place" placeholder="Province/Country"></div></div><div class="checkbox-group"><input type="checkbox" id="kyc_third_party"><label for="kyc_third_party">Third Party transaction</label></div></div><div class="modal-footer"><button class="btn-print" onclick="printReceipt()">🖨️ Print Receipt</button></div></div></div>
 
-<!-- RECEIPT MODAL -->
-<div class="modal-overlay receipt-modal" id="receiptModal">
-    <div class="modal-container">
-        <div class="modal-header"><h3>📋 Receipt & KYC</h3><button class="modal-close" onclick="closeReceiptModal()">×</button></div>
-        <div class="modal-body">
-            <div class="receipt-section"><h4>👤 Client</h4><div class="form-group"><label>Full Name</label><input type="text" id="kyc_name" placeholder="Full name..."></div><div class="form-group"><label>Address</label><input type="text" id="kyc_address" placeholder="Address..."></div><div class="form-row"><div class="form-group"><label>DOB</label><input type="date" id="kyc_dob"></div><div class="form-group"><label>Occupation</label><input type="text" id="kyc_occupation" placeholder="Occupation..."></div></div></div>
-            <div class="receipt-section"><h4>🪪 ID</h4><div class="form-group"><label>ID Type</label><select id="kyc_id_type"><option>Driver's License</option><option>Passport</option><option>PR Card</option></select></div><div class="form-row"><div class="form-group"><label>ID Number</label><input type="text" id="kyc_id_num" placeholder="ID#"></div><div class="form-group"><label>Expiry</label><input type="date" id="kyc_expiry"></div></div><div class="form-group"><label>Issued</label><input type="text" id="kyc_issue_place" placeholder="Province/Country"></div></div>
-            <div class="checkbox-group"><input type="checkbox" id="kyc_third_party"><label for="kyc_third_party">Third Party transaction</label></div>
-        </div>
-        <div class="modal-footer"><button class="btn-print" onclick="printReceipt()">🖨️ Print Receipt</button></div>
-    </div>
-</div>
-
-<div id="printableReceipt">
-    <div class="print-header"><h2>CURRENCY EXCHANGE & TRANSFER INC.</h2><p>123 Business Street, Toronto, ON M5V 1A1</p><p><strong>MSB Registration: M12345678</strong></p></div>
-    <div class="print-meta"><div><strong>Date:</strong> <span id="p_date"></span></div><div><strong>Ref:</strong> <span id="p_ref"></span></div></div>
-    <div class="print-grid"><div class="print-box"><h4>Client</h4><div class="print-row"><span>Name:</span><span id="p_name"></span></div><div class="print-row"><span>Address:</span><span id="p_address"></span></div><div class="print-row"><span>ID:</span><span id="p_id_num"></span></div></div><div class="print-box"><h4>Transaction</h4><div class="print-row"><span>Service:</span><span id="p_service"></span></div><div class="print-row"><span>Amount:</span><span id="p_amount"></span></div><div class="print-row" id="p_syp_row" style="display:none;"><span>Beneficiary Gets:</span><span id="p_syp_amt"></span></div><div class="print-row" id="p_city_row" style="display:none;"><span>City/Region:</span><span id="p_city"></span></div><div class="print-row"><span>Rate:</span><span id="p_rate"></span></div><div class="print-row"><span>Fee:</span><span id="p_fee"></span></div><div class="print-total"><div class="print-row"><span>TOTAL:</span><span id="p_total"></span></div></div></div></div>
-    <div class="compliance"><strong>Compliance:</strong> Per FINTRAC regulations.</div>
-    <div class="signatures"><div class="sig-line">Client Signature</div><div class="sig-line">Agent Signature</div></div>
-</div>
+<div id="printableReceipt"><div class="print-header"><h2>CURRENCY EXCHANGE & TRANSFER INC.</h2><p>123 Business Street, Toronto, ON M5V 1A1</p><p><strong>MSB Registration: M12345678</strong></p></div><div class="print-meta"><div><strong>Date:</strong> <span id="p_date"></span></div><div><strong>Ref:</strong> <span id="p_ref"></span></div></div><div class="print-grid"><div class="print-box"><h4>Client</h4><div class="print-row"><span>Name:</span><span id="p_name"></span></div><div class="print-row"><span>Address:</span><span id="p_address"></span></div><div class="print-row"><span>ID:</span><span id="p_id_num"></span></div></div><div class="print-box"><h4>Transaction</h4><div class="print-row"><span>Service:</span><span id="p_service"></span></div><div class="print-row"><span>Amount:</span><span id="p_amount"></span></div><div class="print-row" id="p_syp_row" style="display:none"><span>Beneficiary Gets:</span><span id="p_syp_amt"></span></div><div class="print-row" id="p_city_row" style="display:none"><span>City/Region:</span><span id="p_city"></span></div><div class="print-row"><span>Rate:</span><span id="p_rate"></span></div><div class="print-row"><span>Fee:</span><span id="p_fee"></span></div><div class="print-total"><div class="print-row"><span>TOTAL:</span><span id="p_total"></span></div></div></div></div><div style="border:1px solid #e2e8f0;padding:16px;margin-bottom:24px;font-size:0.85rem;color:#475569;border-radius:12px"><strong>Compliance:</strong> Per FINTRAC regulations.</div><div class="signatures"><div class="sig-line">Client Signature</div><div class="sig-line">Agent Signature</div></div></div>
 
 <div class="toast" id="toast"><div class="icon">✓</div><span class="message" id="toastMessage">Success!</span></div>
 
 <script>
-// ========== CONFIG ==========
-const CURRENCIES = ['USD','EUR','GBP','AED','JOD','MXN','TRY','SAR'];
-const FREE_API = 'https://api.exchangerate-api.com/v4/latest/CAD';
-const API_PROVIDERS = {
-    exchangerate: { name: 'ExchangeRate-API', urlTemplate: 'https://v6.exchangerate-api.com/v6/{KEY}/latest/CAD' },
-    openexchange: { name: 'Open Exchange Rates', urlTemplate: 'https://openexchangerates.org/api/latest.json?app_id={KEY}&base=USD' },
-    currencylayer: { name: 'CurrencyLayer', urlTemplate: 'https://api.currencylayer.com/live?access_key={KEY}&source=CAD' }
+// ===== PROTECTION =====
+document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12') { e.preventDefault(); return; }
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && 'IJCKijck'.indexOf(e.key) >= 0) { e.preventDefault(); return; }
+    if ((e.ctrlKey || e.metaKey) && 'USus'.indexOf(e.key) >= 0 && !e.shiftKey) { e.preventDefault(); return; }
+    if (e.key === 'Escape') { closeSettingsModal(); closeReceiptModal(); }
+});
+</script>
+
+<script>
+// ===== CONFIG =====
+var CURRENCIES = ['USD','EUR','GBP','AED','JOD','MXN','TRY','SAR'];
+var GOOGLE_API = 'https://script.google.com/macros/s/AKfycbxdFSDuE-6jL6Z90iGS5iD4--m4zUrJ1kXNxuO2ZxoJs9PfyORMVm86k7xySgGcKapI/exec';
+var SYNC_SECONDS = 60;
+var countdownLeft = SYNC_SECONDS;
+var syncInterval = null;
+var countdownInterval = null;
+
+var COUNTRY_META = {SY:{name:'Syria',flag:'sy'},JO:{name:'Jordan',flag:'jo'},LB:{name:'Lebanon',flag:'lb'},PS:{name:'Palestine',flag:'ps'},EG:{name:'Egypt',flag:'eg'},IQ:{name:'Iraq',flag:'iq'}};
+
+var transferRules = {
+    SY:[{maxUSD:500,type:'fixed_cad',val:20},{maxUSD:999999,type:'percent',val:3}],
+    JO:[{maxUSD:1000,type:'fixed_usd',val:20},{maxUSD:999999,type:'percent',val:2.5}],
+    LB:[{maxUSD:1000,type:'fixed_cad',val:15},{maxUSD:999999,type:'percent',val:2}],
+    PS_gaza:[{maxUSD:500,type:'fixed_cad',val:15},{maxUSD:999999,type:'percent',val:2.5}],
+    PS_westbank:[{maxUSD:500,type:'fixed_cad',val:15},{maxUSD:999999,type:'percent',val:2.5}],
+    EG:[{maxUSD:999999,type:'fixed_cad',val:25}],
+    IQ:[{maxUSD:999999,type:'percent',val:4}]
 };
 
-const COUNTRY_META = {
-    SY: { name: 'Syria', flag: 'sy' },
-    JO: { name: 'Jordan', flag: 'jo', hasJOD: true },
-    LB: { name: 'Lebanon', flag: 'lb' },
-    PS: { name: 'Palestine', flag: 'ps', hasCities: true },
-    EG: { name: 'Egypt', flag: 'eg' },
-    IQ: { name: 'Iraq', flag: 'iq' }
-};
+var syriaCities = {damascus:{name:'Damascus',cadRate:7650,usdRate:11200},aleppo:{name:'Aleppo',cadRate:7650,usdRate:11200},homs:{name:'Homs',cadRate:7600,usdRate:11100},hama:{name:'Hama',cadRate:7600,usdRate:11100},latakia:{name:'Latakia',cadRate:7650,usdRate:11200},idlib:{name:'Idlib',cadRate:7600,usdRate:11100}};
 
-// All thresholds are in USD
-let transferRules = {
-    SY:         [{ maxUSD: 500, type: 'fixed_cad', val: 20 }, { maxUSD: 999999, type: 'percent', val: 3 }],
-    JO:         [{ maxUSD: 1000, type: 'fixed_usd', val: 20 }, { maxUSD: 999999, type: 'percent', val: 2.5 }],
-    LB:         [{ maxUSD: 1000, type: 'fixed_cad', val: 15 }, { maxUSD: 999999, type: 'percent', val: 2 }],
-    PS_gaza:    [{ maxUSD: 500, type: 'fixed_cad', val: 15 }, { maxUSD: 999999, type: 'percent', val: 2.5 }],
-    PS_westbank:[{ maxUSD: 500, type: 'fixed_cad', val: 15 }, { maxUSD: 999999, type: 'percent', val: 2.5 }],
-    EG:         [{ maxUSD: 999999, type: 'fixed_cad', val: 25 }],
-    IQ:         [{ maxUSD: 999999, type: 'percent', val: 4 }]
-};
+var currentTab = 'exchange', exchangeMode = 'buy', syriaMode = 'send_usd', selectedCity = 'damascus', selectedPSCity = 'gaza';
+var countryModes = {JO:'send_usd',LB:'send_usd',PS:'send_usd',EG:'send_usd',IQ:'send_usd'};
+var countryRateManual = {JO:false,LB:false,PS:false,EG:false,IQ:false};
+var countryFeeManual = {JO:false,LB:false,PS:false,EG:false,IQ:false};
+var isSyriaFeeManual = false, isSyriaRateManual = false;
 
-let syriaCities = {
-    damascus: { name: 'Damascus', cadRate: 7650, usdRate: 11200 },
-    aleppo:   { name: 'Aleppo',   cadRate: 7650, usdRate: 11200 },
-    homs:     { name: 'Homs',     cadRate: 7600, usdRate: 11100 },
-    hama:     { name: 'Hama',     cadRate: 7600, usdRate: 11100 },
-    latakia:  { name: 'Latakia',  cadRate: 7650, usdRate: 11200 },
-    idlib:    { name: 'Idlib',    cadRate: 7600, usdRate: 11100 }
-};
+function $(id) { return document.getElementById(id); }
+function fmt(v,c) { return v.toLocaleString('en-CA',{style:'currency',currency:c,minimumFractionDigits:2,maximumFractionDigits:2}); }
+function fmtNum(v) { return v.toLocaleString('en-CA',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function fmtSYP(v) { return Math.round(v).toLocaleString('en-US')+' SYP'; }
+function getClientRate() { return (parseFloat($('spot_usd').value)||0) + (parseFloat($('margin_usd_buy').value)||0); }
+function ensureRate(id) { var el=$(id),v=parseFloat(el.value); if(!v||v<=0) el.value=getClientRate().toFixed(4); return parseFloat(el.value); }
 
-// State
-let currentTab = 'exchange', exchangeMode = 'buy', syriaMode = 'send_usd', selectedCity = 'damascus';
-let selectedPSCity = 'gaza';
-let countryModes  = { JO:'send_usd', LB:'send_usd', PS:'send_usd', EG:'send_usd', IQ:'send_usd' };
-let countryRateManual = { JO:false, LB:false, PS:false, EG:false, IQ:false };
-let countryFeeManual  = { JO:false, LB:false, PS:false, EG:false, IQ:false };
-let isSyriaFeeManual = false, isSyriaRateManual = false;
-let activeSource = localStorage.getItem('apiSource') || 'free';
-
-const fmt    = (v,c) => v.toLocaleString('en-CA',{style:'currency',currency:c,minimumFractionDigits:2,maximumFractionDigits:2});
-const fmtNum = (v)   => v.toLocaleString('en-CA',{minimumFractionDigits:2,maximumFractionDigits:2});
-const fmtSYP = (v)   => Math.round(v).toLocaleString('en-US')+' SYP';
-
-// ========== CORE: client rate from spot + margin ==========
-function getClientRate() {
-    const s = parseFloat(document.getElementById('spot_usd').value) || 0;
-    const b = parseFloat(document.getElementById('margin_usd_buy').value) || 0;
-    return s + b;
+function findMatchingRule(rk, usd) {
+    var rules = transferRules[rk] || [];
+    for (var i=0; i<rules.length; i++) { if (usd <= rules[i].maxUSD) return rules[i]; }
+    return rules.length ? rules[rules.length-1] : {maxUSD:999999,type:'percent',val:0};
 }
+function describeTier(r) { return r.type==='percent' ? r.val+'% Commission' : r.type==='fixed_usd' ? 'Fixed $'+r.val+' USD' : 'Fixed $'+r.val+' CAD'; }
+function inputToUSD(a,m,r,c) { return m==='send_usd'?a : m==='spend_cad'?(r>0?a/r:0) : m==='send_jod'?a*(c||1.4135) : a; }
 
-// Ensure a rate field has a valid value, setting it from client rate if needed
-function ensureRate(fieldId) {
-    const el = document.getElementById(fieldId);
-    const v = parseFloat(el.value);
-    if (!v || v <= 0) {
-        el.value = getClientRate().toFixed(4);
-    }
-    return parseFloat(el.value);
-}
-
-// ========== CORE: unified fee lookup ==========
-function findMatchingRule(ruleKey, amountUSD) {
-    const rules = transferRules[ruleKey] || [];
-    for (const r of rules) {
-        if (amountUSD <= r.maxUSD) return r;
-    }
-    return rules.length > 0 ? rules[rules.length - 1] : { maxUSD: 999999, type: 'percent', val: 0 };
-}
-
-function describeTier(rule) {
-    if (rule.type === 'percent') return `${rule.val}% Commission`;
-    if (rule.type === 'fixed_usd') return `Fixed $${rule.val} USD`;
-    return `Fixed $${rule.val} CAD`;
-}
-
-// ========== CORE: convert any input to USD equivalent ==========
-function inputToUSD(inputAmount, mode, rateCADperUSD, crossJOD) {
-    if (mode === 'send_usd')  return inputAmount;
-    if (mode === 'spend_cad') return rateCADperUSD > 0 ? inputAmount / rateCADperUSD : 0;
-    if (mode === 'send_jod')  return inputAmount * (crossJOD || 1.4135);
-    return inputAmount;
-}
-
-// ========== CORE: apply auto fee detection to badge + fields ==========
-function applyAutoFee(cc, amountUSD) {
-    const lower = cc.toLowerCase();
-    const badge     = document.getElementById(lower + '_fee_tier_badge');
-    const badgeText = document.getElementById(lower + '_fee_tier_text');
-    const feeTypeEl = document.getElementById(lower + '_fee_type');
-    const feeValEl  = document.getElementById(lower + '_fee_val');
-    const isManual  = (cc === 'SY') ? isSyriaFeeManual : countryFeeManual[cc];
-
+function applyAutoFee(cc, usd) {
+    var lo=cc.toLowerCase(), badge=$(lo+'_fee_tier_badge'), bt=$(lo+'_fee_tier_text'), ftEl=$(lo+'_fee_type'), fvEl=$(lo+'_fee_val');
+    var isM = cc==='SY' ? isSyriaFeeManual : countryFeeManual[cc];
     if (!badge) return;
-    if (amountUSD <= 0) { badge.style.display = 'none'; return; }
-    badge.style.display = 'inline-flex';
-
-    // Determine rule key
-    const ruleKey = (cc === 'PS') ? `PS_${selectedPSCity}` : cc;
-    const rule = findMatchingRule(ruleKey, amountUSD);
-    const tierDesc = describeTier(rule);
-
-    if (!isManual) {
-        // Auto mode: set fee fields from rule
-        feeTypeEl.value = rule.type;
-        feeValEl.value  = rule.val;
-        badge.className  = 'fee-tier-badge auto';
-        badgeText.textContent = `🤖 Auto: ≤$${rule.maxUSD.toLocaleString()} USD → ${tierDesc}`;
-    } else {
-        // Manual mode: just show what auto would pick
-        badge.className = 'fee-tier-badge manual';
-        badgeText.textContent = `✏️ Manual — Auto would be: ≤$${rule.maxUSD.toLocaleString()} USD → ${tierDesc}`;
-    }
+    if (usd<=0) { badge.style.display='none'; return; }
+    badge.style.display='inline-flex';
+    var rk = cc==='PS' ? 'PS_'+selectedPSCity : cc;
+    var rule = findMatchingRule(rk, usd), td = describeTier(rule);
+    if (!isM) { ftEl.value=rule.type; fvEl.value=rule.val; badge.className='fee-tier-badge auto'; bt.textContent='🤖 Auto: ≤$'+rule.maxUSD.toLocaleString()+' USD → '+td; }
+    else { badge.className='fee-tier-badge manual'; bt.textContent='✏️ Manual — Auto: ≤$'+rule.maxUSD.toLocaleString()+' USD → '+td; }
 }
 
-// ========== INIT ==========
+// ===== AUTO SYNC =====
+function startAutoSync() {
+    fetchRatesQuiet();
+    syncInterval = setInterval(fetchRatesQuiet, SYNC_SECONDS*1000);
+    countdownLeft = SYNC_SECONDS;
+    countdownInterval = setInterval(function() {
+        countdownLeft--;
+        if (countdownLeft <= 0) countdownLeft = SYNC_SECONDS;
+        var el = $('countdown');
+        if (el) el.textContent = countdownLeft;
+    }, 1000);
+}
+
+function fetchRatesQuiet() {
+    fetch(GOOGLE_API).then(function(r){return r.json();}).then(function(data) {
+        if (data && typeof data === 'object') {
+            CURRENCIES.forEach(function(c) {
+                if (data[c]) { var el=$('spot_'+c.toLowerCase()); if(el) el.value=parseFloat(data[c]).toFixed(4); }
+            });
+            $('lastUpdated').textContent = 'Last sync: '+new Date().toLocaleTimeString();
+            $('liveBadge').style.display = 'flex';
+            recalcAll(); saveRates();
+        }
+    }).catch(function(){});
+}
+
+function fetchRates() {
+    var btn = $('btnSync'); btn.classList.add('loading');
+    fetch(GOOGLE_API).then(function(r){return r.json();}).then(function(data) {
+        if (data && typeof data === 'object') {
+            CURRENCIES.forEach(function(c) {
+                if (data[c]) { var el=$('spot_'+c.toLowerCase()); if(el) el.value=parseFloat(data[c]).toFixed(4); }
+            });
+            $('lastUpdated').textContent = 'Last sync: '+new Date().toLocaleTimeString();
+            $('liveBadge').style.display = 'flex';
+            recalcAll(); saveRates(); showToast('Rates updated!');
+        }
+        btn.classList.remove('loading'); countdownLeft = SYNC_SECONDS;
+    }).catch(function(e) { showToast('Sync failed','error'); btn.classList.remove('loading'); });
+}
+
+// ===== INIT =====
 function init() {
     initTheme(); loadSavedData(); renderCitySelector(); renderSyriaRatesGrid();
     renderRulesConfig(); renderPalestineRulesConfig();
-    initApiSource(); recalcAll(); switchTab('exchange');
+    recalcAll(); switchTab('exchange'); startAutoSync();
 }
 
-function initTheme() {
-    const s = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', s);
-    document.getElementById('themeToggle').checked = s === 'light';
-}
-function toggleTheme() {
-    const l = document.getElementById('themeToggle').checked;
-    document.documentElement.setAttribute('data-theme', l?'light':'dark');
-    localStorage.setItem('theme', l?'light':'dark');
-}
+function initTheme() { var s=localStorage.getItem('theme')||'dark'; document.documentElement.setAttribute('data-theme',s); $('themeToggle').checked=s==='light'; }
+function toggleTheme() { var l=$('themeToggle').checked; document.documentElement.setAttribute('data-theme',l?'light':'dark'); localStorage.setItem('theme',l?'light':'dark'); }
 
 function loadSavedData() {
-    const sr = localStorage.getItem('savedRates');
-    if (sr) Object.entries(JSON.parse(sr)).forEach(([c,v])=>{const el=document.getElementById('spot_'+c.toLowerCase());if(el)el.value=v;});
-    const tr = localStorage.getItem('transferRules');
-    if (tr) { try { transferRules = JSON.parse(tr); } catch(e){} }
-    const sc = localStorage.getItem('syriaCities');
-    if (sc) { try { syriaCities = JSON.parse(sc); } catch(e){} }
+    try { var sr=localStorage.getItem('savedRates'); if(sr) Object.entries(JSON.parse(sr)).forEach(function(e){var el=$('spot_'+e[0].toLowerCase());if(el)el.value=e[1];}); } catch(e){}
+    try { var tr=localStorage.getItem('transferRules'); if(tr) transferRules=JSON.parse(tr); } catch(e){}
+    try { var sc=localStorage.getItem('syriaCities'); if(sc) syriaCities=JSON.parse(sc); } catch(e){}
 }
+function saveRules() { localStorage.setItem('transferRules',JSON.stringify(transferRules)); }
+function saveRates() { var r={}; CURRENCIES.forEach(function(c){var el=$('spot_'+c.toLowerCase());if(el)r[c]=el.value;}); localStorage.setItem('savedRates',JSON.stringify(r)); }
 
-function saveRules() { localStorage.setItem('transferRules', JSON.stringify(transferRules)); }
-function saveRates() { const r={}; CURRENCIES.forEach(c=>{const el=document.getElementById('spot_'+c.toLowerCase());if(el)r[c]=el.value;}); localStorage.setItem('savedRates',JSON.stringify(r)); }
-
-function initApiSource() {
-    const url = localStorage.getItem('googleScriptUrl');
-    const key = localStorage.getItem('customApiKey');
-    if (url) document.getElementById('google_script_url').value = url;
-    if (key) document.getElementById('custom_api_key').value = key;
-    selectSource(activeSource); updateSourceDisplay();
-}
-
-// ========== SYRIA CITIES ==========
+// ===== CITIES =====
 function renderCitySelector() {
-    document.getElementById('citySelector').innerHTML = Object.entries(syriaCities).map(([k,v]) =>
-        `<div class="city-btn ${k===selectedCity?'active':''}" onclick="selectCity('${k}',this)"><div class="city-name">${v.name}</div><div class="city-rate">${syriaMode==='syp_usd'?v.usdRate:v.cadRate} SYP</div></div>`
-    ).join('');
+    $('citySelector').innerHTML = Object.keys(syriaCities).map(function(k){var v=syriaCities[k]; return '<div class="city-btn '+(k===selectedCity?'active':'')+'" onclick="selectCity(\''+k+'\',this)"><div class="city-name">'+v.name+'</div><div class="city-rate">'+(syriaMode==='syp_usd'?v.usdRate:v.cadRate)+' SYP</div></div>';}).join('');
 }
 function renderSyriaRatesGrid() {
-    document.getElementById('syriaRatesGrid').innerHTML = Object.entries(syriaCities).map(([k,v]) =>
-        `<div class="syria-city-card"><h4>📍 ${v.name}</h4><div class="rate-inputs"><div><label>CAD/SYP</label><input type="number" value="${v.cadRate}" oninput="updateCityRate('${k}','cad',this.value)"></div><div><label>USD/SYP</label><input type="number" value="${v.usdRate}" oninput="updateCityRate('${k}','usd',this.value)"></div></div></div>`
-    ).join('');
+    $('syriaRatesGrid').innerHTML = Object.keys(syriaCities).map(function(k){var v=syriaCities[k]; return '<div class="syria-city-card"><h4>📍 '+v.name+'</h4><div class="rate-inputs"><div><label>CAD/SYP</label><input type="number" value="'+v.cadRate+'" oninput="updateCityRate(\''+k+'\',\'cad\',this.value)"></div><div><label>USD/SYP</label><input type="number" value="'+v.usdRate+'" oninput="updateCityRate(\''+k+'\',\'usd\',this.value)"></div></div></div>';}).join('');
 }
-function updateCityRate(c,t,v) {
-    syriaCities[c][t==='cad'?'cadRate':'usdRate'] = parseFloat(v)||0;
-    localStorage.setItem('syriaCities', JSON.stringify(syriaCities));
-    renderCitySelector(); calcSYPTransferAny();
-}
-function selectCity(c,el) {
-    selectedCity = c;
-    document.querySelectorAll('#citySelector .city-btn').forEach(b=>b.classList.remove('active'));
-    if(el)el.classList.add('active');
-    calcSYPTransferAny();
-}
-function selectPSCity(city,el) {
-    selectedPSCity = city;
-    document.querySelectorAll('#psCitySelector .city-btn').forEach(b=>b.classList.remove('active'));
-    if(el) el.classList.add('active');
-    // Re-detect fees with new city rules
-    countryFeeManual['PS'] = false;
-    handleCountryAmountChange('PS');
-}
+function updateCityRate(c,t,v) { syriaCities[c][t==='cad'?'cadRate':'usdRate']=parseFloat(v)||0; localStorage.setItem('syriaCities',JSON.stringify(syriaCities)); renderCitySelector(); calcSYPTransferAny(); }
+function selectCity(c,el) { selectedCity=c; document.querySelectorAll('#citySelector .city-btn').forEach(function(b){b.classList.remove('active');}); if(el)el.classList.add('active'); calcSYPTransferAny(); }
+function selectPSCity(city,el) { selectedPSCity=city; document.querySelectorAll('#psCitySelector .city-btn').forEach(function(b){b.classList.remove('active');}); if(el)el.classList.add('active'); countryFeeManual.PS=false; handleCountryAmountChange('PS'); }
 
-// ========== RULES CONFIG UI ==========
+// ===== RULES CONFIG =====
 function renderRulesConfig() {
-    const countries = ['SY','JO','LB','EG','IQ'];
-    document.getElementById('rulesContainer').innerHTML = countries.map(cc => {
-        const meta = COUNTRY_META[cc];
-        const rules = transferRules[cc] || [];
-        return `<div class="rules-country-card">
-            <h4><img src="https://flagcdn.com/w40/${meta.flag}.png"> ${meta.name} — Fee Tiers</h4>
-            <div id="rules_tiers_${cc}">${renderTiers(cc, rules)}</div>
-            <button class="btn-add-tier" onclick="addTier('${cc}')">+ Add Tier</button>
-        </div>`;
-    }).join('');
+    $('rulesContainer').innerHTML = ['SY','JO','LB','EG','IQ'].map(function(cc){var m=COUNTRY_META[cc],r=transferRules[cc]||[]; return '<div class="rules-country-card"><h4><img src="https://flagcdn.com/w40/'+m.flag+'.png"> '+m.name+' — Fee Tiers</h4><div id="rules_tiers_'+cc+'">'+renderTiers(cc,r)+'</div><button class="btn-add-tier" onclick="addTier(\''+cc+'\')">+ Add Tier</button></div>';}).join('');
 }
 function renderPalestineRulesConfig() {
-    const regions = [
-        { key:'PS_gaza',     name:'Gaza Strip',  emoji:'🏙️' },
-        { key:'PS_westbank', name:'West Bank',    emoji:'🏔️' }
-    ];
-    document.getElementById('palestineRulesContainer').innerHTML = regions.map(r => {
-        const rules = transferRules[r.key] || [];
-        return `<div class="rules-country-card">
-            <h4>${r.emoji} ${r.name} — Fee Tiers</h4>
-            <div id="rules_tiers_${r.key}">${renderTiers(r.key, rules)}</div>
-            <button class="btn-add-tier" onclick="addTier('${r.key}')">+ Add Tier</button>
-        </div>`;
-    }).join('');
+    $('palestineRulesContainer').innerHTML = [{key:'PS_gaza',name:'Gaza Strip',e:'🏙️'},{key:'PS_westbank',name:'West Bank',e:'🏔️'}].map(function(r){var rules=transferRules[r.key]||[]; return '<div class="rules-country-card"><h4>'+r.e+' '+r.name+'</h4><div id="rules_tiers_'+r.key+'">'+renderTiers(r.key,rules)+'</div><button class="btn-add-tier" onclick="addTier(\''+r.key+'\')">+ Add Tier</button></div>';}).join('');
 }
-function renderTiers(ruleKey, rules) {
-    return rules.map((r,i) => `<div class="rule-tier">
-        <div class="tier-num">${i+1}</div>
-        <div class="form-group" style="margin:0"><label>Max USD</label><input type="number" value="${r.maxUSD}" oninput="updateTier('${ruleKey}',${i},'maxUSD',this.value)"></div>
-        <div class="form-group" style="margin:0"><label>Fee Type</label><select onchange="updateTier('${ruleKey}',${i},'type',this.value)">
-            <option value="fixed_cad" ${r.type==='fixed_cad'?'selected':''}>Fixed CAD</option>
-            <option value="fixed_usd" ${r.type==='fixed_usd'?'selected':''}>Fixed USD</option>
-            <option value="percent"   ${r.type==='percent'  ?'selected':''}>% Commission</option>
-        </select></div>
-        <div class="form-group" style="margin:0"><label>Value</label><input type="number" step="0.1" value="${r.val}" oninput="updateTier('${ruleKey}',${i},'val',this.value)"></div>
-        <button class="btn-remove-tier" onclick="removeTier('${ruleKey}',${i})" ${rules.length<=1?'disabled style="opacity:0.3"':''}>×</button>
-    </div>`).join('');
+function renderTiers(rk,rules) {
+    return rules.map(function(r,i){return '<div class="rule-tier"><div class="tier-num">'+(i+1)+'</div><div class="form-group" style="margin:0"><label>Max USD</label><input type="number" value="'+r.maxUSD+'" oninput="updateTier(\''+rk+'\','+i+',\'maxUSD\',this.value)"></div><div class="form-group" style="margin:0"><label>Fee Type</label><select onchange="updateTier(\''+rk+'\','+i+',\'type\',this.value)"><option value="fixed_cad"'+(r.type==='fixed_cad'?' selected':'')+'>Fixed CAD</option><option value="fixed_usd"'+(r.type==='fixed_usd'?' selected':'')+'>Fixed USD</option><option value="percent"'+(r.type==='percent'?' selected':'')+'>% Commission</option></select></div><div class="form-group" style="margin:0"><label>Value</label><input type="number" step="0.1" value="'+r.val+'" oninput="updateTier(\''+rk+'\','+i+',\'val\',this.value)"></div><button class="btn-remove-tier" onclick="removeTier(\''+rk+'\','+i+')"'+(rules.length<=1?' disabled style="opacity:0.3"':'')+'>×</button></div>';}).join('');
 }
-function updateTier(rk,idx,field,value) {
-    if(!transferRules[rk]) return;
-    transferRules[rk][idx][field] = field==='type' ? value : (parseFloat(value)||0);
-    saveRules();
-}
-function addTier(rk) {
-    if(!transferRules[rk]) transferRules[rk]=[];
-    transferRules[rk].push({maxUSD:999999,type:'fixed_cad',val:0});
-    saveRules();
-    const c = document.getElementById('rules_tiers_'+rk);
-    if(c) c.innerHTML = renderTiers(rk, transferRules[rk]);
-}
-function removeTier(rk,idx) {
-    if(!transferRules[rk]||transferRules[rk].length<=1) return;
-    transferRules[rk].splice(idx,1);
-    saveRules();
-    const c = document.getElementById('rules_tiers_'+rk);
-    if(c) c.innerHTML = renderTiers(rk, transferRules[rk]);
-}
+function updateTier(rk,i,f,v) { if(!transferRules[rk])return; transferRules[rk][i][f]=f==='type'?v:(parseFloat(v)||0); saveRules(); }
+function addTier(rk) { if(!transferRules[rk])transferRules[rk]=[]; transferRules[rk].push({maxUSD:999999,type:'fixed_cad',val:0}); saveRules(); var c=$('rules_tiers_'+rk); if(c)c.innerHTML=renderTiers(rk,transferRules[rk]); }
+function removeTier(rk,i) { if(!transferRules[rk]||transferRules[rk].length<=1)return; transferRules[rk].splice(i,1); saveRules(); var c=$('rules_tiers_'+rk); if(c)c.innerHTML=renderTiers(rk,transferRules[rk]); }
 
-// ========== NAVIGATION ==========
-function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('open');
-    document.getElementById('sidebarOverlay').classList.toggle('active');
-}
+// ===== NAV =====
+function toggleSidebar() { $('sidebar').classList.toggle('open'); $('sidebarOverlay').classList.toggle('active'); }
+function updateFlag(id) { var sel=$(id),opt=sel.options[sel.selectedIndex],f=opt.getAttribute('data-flag'),img=$('flag_'+id); if(img&&f)img.src='https://flagcdn.com/w40/'+f+'.png'; }
+function showToast(msg,type) { var t=$('toast'); t.className='toast '+(type||'success')+' show'; $('toastMessage').textContent=msg; setTimeout(function(){t.classList.remove('show');},4000); }
+function openSettingsModal() { $('settingsModal').classList.add('active'); renderRulesConfig(); renderPalestineRulesConfig(); }
+function closeSettingsModal() { $('settingsModal').classList.remove('active'); }
+function switchSettingsTab(tab,btn) { document.querySelectorAll('#settingsTabsContainer .modal-tab').forEach(function(t){t.classList.remove('active');}); document.querySelectorAll('.settings-section').forEach(function(s){s.classList.remove('active');}); if(btn)btn.classList.add('active'); $('settings_'+tab).classList.add('active'); }
+function openReceiptModal() { $('receiptModal').classList.add('active'); }
+function closeReceiptModal() { $('receiptModal').classList.remove('active'); }
 
 function switchTab(t) {
     currentTab = t;
     if (window.innerWidth <= 1024) toggleSidebar();
+    document.querySelectorAll('.nav-item').forEach(function(el){ el.classList.toggle('active', el.getAttribute('data-tab')===t); });
+    var titles = {exchange:['Cash Exchange','Convert currencies at competitive rates'],transfer_sy:['Transfer to Syria','Send money to Syria'],transfer_jo:['Transfer to Jordan','Send money to Jordan'],transfer_lb:['Transfer to Lebanon','Send money to Lebanon'],transfer_ps:['Transfer to Palestine','Send to Gaza or West Bank'],transfer_eg:['Transfer to Egypt','Send money to Egypt'],transfer_iq:['Transfer to Iraq','Send money to Iraq']};
+    $('pageTitle').textContent = (titles[t]||titles.exchange)[0];
+    $('pageSubtitle').textContent = (titles[t]||titles.exchange)[1];
+    document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
+    $('tab_'+t).classList.add('active');
+    ['exchange_results','transfer_results','syria_results'].forEach(function(id){ $(id).style.display='none'; });
+    $('res_jod_final_box').style.display='none'; $('res_ps_city_row').style.display='none'; $('resultTotal').classList.remove('syria-total');
 
-    document.querySelectorAll('.nav-item').forEach(el => {
-        el.classList.toggle('active', el.getAttribute('data-tab') === t);
-    });
-
-    const titles = {
-        exchange:     ['Cash Exchange',       'Convert currencies at competitive rates'],
-        transfer_sy:  ['Transfer to Syria',   'Send money to Syria — USD or Syrian Pounds'],
-        transfer_jo:  ['Transfer to Jordan',  'Send money to Jordan quickly and securely'],
-        transfer_lb:  ['Transfer to Lebanon', 'Send money to Lebanon'],
-        transfer_ps:  ['Transfer to Palestine','Send money to Gaza or West Bank'],
-        transfer_eg:  ['Transfer to Egypt',   'Send money to Egypt'],
-        transfer_iq:  ['Transfer to Iraq',    'Send money to Iraq']
-    };
-    document.getElementById('pageTitle').textContent    = (titles[t]||titles.exchange)[0];
-    document.getElementById('pageSubtitle').textContent = (titles[t]||titles.exchange)[1];
-
-    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-    document.getElementById('tab_'+t).classList.add('active');
-
-    ['exchange_results','transfer_results','syria_results'].forEach(id => document.getElementById(id).style.display='none');
-    document.getElementById('res_jod_final_box').style.display = 'none';
-    document.getElementById('res_ps_city_row').style.display   = 'none';
-    document.getElementById('resultTotal').classList.remove('syria-total');
-
-    if (t === 'exchange') {
-        document.getElementById('exchange_results').style.display = 'block';
-        document.getElementById('lbl_total').textContent = 'Total CAD';
-        calcExchange();
-    } else if (t === 'transfer_sy') {
-        document.getElementById('syria_results').style.display = 'block';
-        setSyriaMode(syriaMode);
-    } else if (t === 'transfer_jo') {
-        document.getElementById('transfer_results').style.display = 'block';
-        document.getElementById('res_jod_final_box').style.display = 'block';
-        handleCountryAmountChange('JO');
-    } else if (t === 'transfer_ps') {
-        document.getElementById('transfer_results').style.display = 'block';
-        document.getElementById('res_ps_city_row').style.display = 'flex';
-        document.getElementById('res_ps_city').textContent = selectedPSCity==='gaza'?'Gaza':'West Bank';
-        handleCountryAmountChange('PS');
-    } else {
-        const cc = t.replace('transfer_','').toUpperCase();
-        document.getElementById('transfer_results').style.display = 'block';
-        handleCountryAmountChange(cc);
-    }
+    if (t==='exchange') { $('exchange_results').style.display='block'; $('lbl_total').textContent='Total CAD'; calcExchange(); }
+    else if (t==='transfer_sy') { $('syria_results').style.display='block'; setSyriaMode(syriaMode); }
+    else if (t==='transfer_jo') { $('transfer_results').style.display='block'; $('res_jod_final_box').style.display='block'; handleCountryAmountChange('JO'); }
+    else if (t==='transfer_ps') { $('transfer_results').style.display='block'; $('res_ps_city_row').style.display='flex'; $('res_ps_city').textContent=selectedPSCity==='gaza'?'Gaza':'West Bank'; handleCountryAmountChange('PS'); }
+    else { var cc=t.replace('transfer_','').toUpperCase(); $('transfer_results').style.display='block'; handleCountryAmountChange(cc); }
 }
 
-// ========== MODALS ==========
-function openSettingsModal()  { document.getElementById('settingsModal').classList.add('active'); renderRulesConfig(); renderPalestineRulesConfig(); }
-function closeSettingsModal() { document.getElementById('settingsModal').classList.remove('active'); }
-function switchSettingsTab(tab,btn) {
-    document.querySelectorAll('#settingsTabsContainer .modal-tab').forEach(t=>t.classList.remove('active'));
-    document.querySelectorAll('.settings-section').forEach(s=>s.classList.remove('active'));
-    if(btn) btn.classList.add('active');
-    document.getElementById('settings_'+tab).classList.add('active');
-}
-function openReceiptModal() { document.getElementById('receiptModal').classList.add('active'); }
-function closeReceiptModal(){ document.getElementById('receiptModal').classList.remove('active'); }
-function openApiModal()     { document.getElementById('apiModal').classList.add('active'); }
-function closeApiModal()    { document.getElementById('apiModal').classList.remove('active'); }
-function showToast(msg,type='success') { const t=document.getElementById('toast');t.className=`toast ${type} show`;document.getElementById('toastMessage').textContent=msg;setTimeout(()=>t.classList.remove('show'),4000); }
-function updateFlag(id) { const sel=document.getElementById(id),opt=sel.options[sel.selectedIndex],flag=opt.getAttribute('data-flag'),img=document.getElementById('flag_'+id);if(img&&flag)img.src=`https://flagcdn.com/w40/${flag}.png`; }
-
-// ========== EXCHANGE ==========
-function setExchangeMode(m) {
-    exchangeMode = m;
-    document.getElementById('ex_mode_buy').classList.toggle('active',m==='buy');
-    document.getElementById('ex_mode_sell').classList.toggle('active',m==='sell');
-    calcExchange();
-}
+// ===== EXCHANGE =====
+function setExchangeMode(m) { exchangeMode=m; $('ex_mode_buy').classList.toggle('active',m==='buy'); $('ex_mode_sell').classList.toggle('active',m==='sell'); calcExchange(); }
 function calcExchange() {
-    const cur = document.getElementById('ex_currency').value;
-    const amt = parseFloat(document.getElementById('ex_amount').value)||0;
-    const code = cur.toLowerCase();
-    const spot = parseFloat(document.getElementById('spot_'+code).value)||0;
-    let finalRate, marginTxt, typeTxt;
-    if (cur==='USD') {
-        const mB = parseFloat(document.getElementById('margin_usd_buy').value)||0;
-        const mS = parseFloat(document.getElementById('margin_usd_sell').value)||0;
-        typeTxt = "Fixed (Points)";
-        finalRate = exchangeMode==='buy' ? spot+mB : spot-mS;
-        marginTxt = exchangeMode==='buy' ? `+${mB}` : `-${mS}`;
-    } else {
-        const mB = parseFloat(document.getElementById(`margin_${code}_buy`).value)||0;
-        const mS = parseFloat(document.getElementById(`margin_${code}_sell`).value)||0;
-        typeTxt = "Percentage";
-        finalRate = exchangeMode==='buy' ? spot*(1+mB/100) : spot*(1-mS/100);
-        marginTxt = exchangeMode==='buy' ? `+${mB}%` : `-${mS}%`;
-    }
-    document.getElementById('ex_res_spot').textContent   = spot.toFixed(4);
-    document.getElementById('ex_res_type').textContent    = typeTxt;
-    document.getElementById('ex_res_margin').textContent  = marginTxt;
-    document.getElementById('ex_res_rate').textContent    = finalRate.toFixed(4);
-    document.getElementById('final_total').textContent    = fmt(amt*finalRate,'CAD');
+    var cur=$('ex_currency').value, amt=parseFloat($('ex_amount').value)||0, code=cur.toLowerCase(), spot=parseFloat($('spot_'+code).value)||0;
+    var finalRate,marginTxt,typeTxt;
+    if (cur==='USD') { var mB=parseFloat($('margin_usd_buy').value)||0, mS=parseFloat($('margin_usd_sell').value)||0; typeTxt='Fixed (Points)'; finalRate=exchangeMode==='buy'?spot+mB:spot-mS; marginTxt=exchangeMode==='buy'?'+'+mB:'-'+mS; }
+    else { var mB=parseFloat($('margin_'+code+'_buy').value)||0, mS=parseFloat($('margin_'+code+'_sell').value)||0; typeTxt='Percentage'; finalRate=exchangeMode==='buy'?spot*(1+mB/100):spot*(1-mS/100); marginTxt=exchangeMode==='buy'?'+'+mB+'%':'-'+mS+'%'; }
+    $('ex_res_spot').textContent=spot.toFixed(4); $('ex_res_type').textContent=typeTxt; $('ex_res_margin').textContent=marginTxt; $('ex_res_rate').textContent=finalRate.toFixed(4); $('final_total').textContent=fmt(amt*finalRate,'CAD');
 }
 
-// ========== GENERIC COUNTRY TRANSFER (JO, LB, PS, EG, IQ) ==========
-function setCountryMode(cc, mode) {
-    countryModes[cc] = mode;
-    const lower = cc.toLowerCase();
-    document.querySelectorAll(`#tab_transfer_${lower} .mode-btn`).forEach(b=>b.classList.remove('active'));
-    const btn = document.getElementById(`${lower}_mode_${mode}`);
-    if(btn) btn.classList.add('active');
-
-    const lblMap = {
-        send_usd: ['Amount to Send (USD)',  'Collect (CAD)'],
-        spend_cad:['Total Cash (CAD)',      'Beneficiary Gets (USD)'],
-        send_jod: ['Amount to Send (JOD)',  'Collect (CAD)']
-    };
-    const lbl = lblMap[mode] || lblMap.send_usd;
-    const amtLabel = document.getElementById('lbl_'+lower+'_amount');
-    if(amtLabel) amtLabel.textContent = lbl[0];
-    document.getElementById('lbl_total').textContent = lbl[1];
-
+// ===== GENERIC COUNTRY =====
+function setCountryMode(cc,mode) {
+    countryModes[cc]=mode; var lo=cc.toLowerCase();
+    document.querySelectorAll('#tab_transfer_'+lo+' .mode-btn').forEach(function(b){b.classList.remove('active');});
+    var btn=$(lo+'_mode_'+mode); if(btn) btn.classList.add('active');
+    var map={send_usd:['Amount to Send (USD)','Collect (CAD)'],spend_cad:['Total Cash (CAD)','Beneficiary Gets (USD)'],send_jod:['Amount to Send (JOD)','Collect (CAD)']};
+    var lbl=map[mode]||map.send_usd;
+    var el=$('lbl_'+lo+'_amount'); if(el)el.textContent=lbl[0]; $('lbl_total').textContent=lbl[1];
     handleCountryAmountChange(cc);
 }
-
 function handleCountryAmountChange(cc) {
-    const lower = cc.toLowerCase();
-    const mode  = countryModes[cc];
-
-    // 1. Ensure rate field is populated
-    if (!countryRateManual[cc]) {
-        document.getElementById(lower+'_rate').value = getClientRate().toFixed(4);
-    }
-    const rate  = ensureRate(lower+'_rate');
-    const cross = cc==='JO' ? (parseFloat(document.getElementById('cross_rate_jod').value)||1.4135) : 1;
-    const amt   = parseFloat(document.getElementById(lower+'_amount').value) || 0;
-
-    // 2. Convert input to USD for tier matching
-    const usdAmt = inputToUSD(amt, mode, rate, cross);
-
-    // 3. Auto-detect fee tier
-    applyAutoFee(cc, usdAmt);
-
-    // 4. Calculate
-    calcCountryTransfer(cc);
+    var lo=cc.toLowerCase(), mode=countryModes[cc];
+    if (!countryRateManual[cc]) $(lo+'_rate').value=getClientRate().toFixed(4);
+    var rate=ensureRate(lo+'_rate'), cross=cc==='JO'?(parseFloat($('cross_rate_jod').value)||1.4135):1;
+    var amt=parseFloat($(lo+'_amount').value)||0, usdAmt=inputToUSD(amt,mode,rate,cross);
+    applyAutoFee(cc,usdAmt); calcCountryTransfer(cc);
 }
-
-function markCountryFeeManual(cc)  { countryFeeManual[cc] = true; handleCountryAmountChange(cc); }
-function markCountryRateManual(cc) { countryRateManual[cc] = true; calcCountryTransfer(cc); }
-function resetCountryDefaults(cc)  { countryRateManual[cc]=false; countryFeeManual[cc]=false; handleCountryAmountChange(cc); }
+function markCountryFeeManual(cc) { countryFeeManual[cc]=true; handleCountryAmountChange(cc); }
+function markCountryRateManual(cc) { countryRateManual[cc]=true; calcCountryTransfer(cc); }
+function resetCountryDefaults(cc) { countryRateManual[cc]=false; countryFeeManual[cc]=false; handleCountryAmountChange(cc); }
 
 function calcCountryTransfer(cc) {
-    const lower = cc.toLowerCase();
-    const inputVal = parseFloat(document.getElementById(lower+'_amount').value) || 0;
-    const fT   = document.getElementById(lower+'_fee_type').value;
-    const fV   = parseFloat(document.getElementById(lower+'_fee_val').value) || 0;
-    const rate = ensureRate(lower+'_rate');
-    const mode = countryModes[cc];
-    const cross = cc==='JO' ? (parseFloat(document.getElementById('cross_rate_jod').value)||1.4135) : 1;
+    var lo=cc.toLowerCase(), iv=parseFloat($(lo+'_amount').value)||0, fT=$(lo+'_fee_type').value, fV=parseFloat($(lo+'_fee_val').value)||0, rate=ensureRate(lo+'_rate'), mode=countryModes[cc], cross=cc==='JO'?(parseFloat($('cross_rate_jod').value)||1.4135):1;
+    var bU=0,fTx='',sU=0,cV=0,cF=0;
 
-    let baseUSD=0, feeTxt='', subUSD=0, cadValue=0, cadFees=0;
-
-    if (mode === 'send_usd') {
-        baseUSD = inputVal;
-        if (fT==='percent')    { const f=baseUSD*(fV/100); subUSD=baseUSD+f; feeTxt=`${fV}% ($${fmtNum(f)} USD)`; cadValue=subUSD*rate; }
-        else if(fT==='fixed_usd'){ subUSD=baseUSD+fV; feeTxt=`$${fmtNum(fV)} USD`; cadValue=subUSD*rate; }
-        else                     { subUSD=baseUSD;     feeTxt=`$${fmtNum(fV)} CAD`; cadValue=subUSD*rate; cadFees=fV; }
-        document.getElementById('tr_res_base').textContent = fmt(baseUSD,'USD');
-        document.getElementById('final_total').textContent = fmt(cadValue+cadFees,'CAD');
-        document.getElementById('lbl_total').textContent = 'Collect (CAD)';
+    if (mode==='send_usd') {
+        bU=iv;
+        if(fT==='percent'){var f=bU*(fV/100);sU=bU+f;fTx=fV+'% ($'+fmtNum(f)+' USD)';cV=sU*rate;}
+        else if(fT==='fixed_usd'){sU=bU+fV;fTx='$'+fmtNum(fV)+' USD';cV=sU*rate;}
+        else{sU=bU;fTx='$'+fmtNum(fV)+' CAD';cV=sU*rate;cF=fV;}
+        $('tr_res_base').textContent=fmt(bU,'USD'); $('final_total').textContent=fmt(cV+cF,'CAD'); $('lbl_total').textContent='Collect (CAD)';
+    } else if (mode==='spend_cad') {
+        var tC=iv;
+        if(fT==='fixed_cad'){cF=fV;fTx='$'+fmtNum(fV)+' CAD';cV=tC-cF;bU=cV/rate;}
+        else if(fT==='fixed_usd'){fTx='$'+fmtNum(fV)+' USD';cV=tC;sU=cV/rate;bU=sU-fV;}
+        else{fTx=fV+'% Comm';cV=tC;sU=tC/rate;bU=sU*(1-fV/100);}
+        $('tr_res_base').textContent=fmt(bU,'USD'); $('final_total').textContent=fmt(bU,'USD'); $('lbl_total').textContent='Beneficiary Gets (USD)';
+    } else if (mode==='send_jod') {
+        bU=iv*cross;
+        if(fT==='percent'){var f=bU*(fV/100);sU=bU+f;fTx=fV+'% ($'+fmtNum(f)+' USD)';cV=sU*rate;}
+        else if(fT==='fixed_usd'){sU=bU+fV;fTx='$'+fmtNum(fV)+' USD';cV=sU*rate;}
+        else{sU=bU;fTx='$'+fmtNum(fV)+' CAD';cV=sU*rate;cF=fV;}
+        $('tr_res_base').textContent=fmt(bU,'USD'); $('final_total').textContent=fmt(cV+cF,'CAD'); $('lbl_total').textContent='Collect (CAD)';
     }
-    else if (mode === 'spend_cad') {
-        const totalCAD = inputVal;
-        if (fT==='fixed_cad')  { cadFees=fV; feeTxt=`$${fmtNum(fV)} CAD`; cadValue=totalCAD-cadFees; baseUSD=cadValue/rate; }
-        else if(fT==='fixed_usd'){ feeTxt=`$${fmtNum(fV)} USD`; cadValue=totalCAD; subUSD=cadValue/rate; baseUSD=subUSD-fV; }
-        else                     { feeTxt=`${fV}% Comm`; cadValue=totalCAD; subUSD=totalCAD/rate; baseUSD=subUSD*(1-fV/100); }
-        document.getElementById('tr_res_base').textContent = fmt(baseUSD,'USD');
-        document.getElementById('final_total').textContent = fmt(baseUSD,'USD');
-        document.getElementById('lbl_total').textContent = 'Beneficiary Gets (USD)';
-    }
-    else if (mode === 'send_jod') {
-        baseUSD = inputVal * cross;
-        if (fT==='percent')    { const f=baseUSD*(fV/100); subUSD=baseUSD+f; feeTxt=`${fV}% ($${fmtNum(f)} USD)`; cadValue=subUSD*rate; }
-        else if(fT==='fixed_usd'){ subUSD=baseUSD+fV; feeTxt=`$${fmtNum(fV)} USD`; cadValue=subUSD*rate; }
-        else                     { subUSD=baseUSD;     feeTxt=`$${fmtNum(fV)} CAD`; cadValue=subUSD*rate; cadFees=fV; }
-        document.getElementById('tr_res_base').textContent = fmt(baseUSD,'USD');
-        document.getElementById('final_total').textContent = fmt(cadValue+cadFees,'CAD');
-        document.getElementById('lbl_total').textContent = 'Collect (CAD)';
-    }
-
-    // JOD display
-    if (cc==='JO') {
-        const jod = mode==='send_jod' ? inputVal : baseUSD/cross;
-        document.getElementById('res_jod_final').textContent = 'JOD '+fmtNum(jod);
-    }
-    // PS region display
-    if (cc==='PS') {
-        document.getElementById('res_ps_city').textContent = selectedPSCity==='gaza'?'Gaza':'West Bank';
-    }
-
-    document.getElementById('tr_res_fee_display').textContent  = feeTxt;
-    document.getElementById('tr_res_rate_display').textContent = rate.toFixed(4);
-    document.getElementById('tr_res_sub_usd').textContent      = fmt(subUSD||baseUSD,'USD');
-    document.getElementById('tr_res_cad_equiv').textContent    = fmt(cadValue,'CAD');
-    document.getElementById('tr_res_cad_fees').textContent     = fmt(cadFees,'CAD');
+    if(cc==='JO') $('res_jod_final').textContent='JOD '+fmtNum(mode==='send_jod'?iv:bU/cross);
+    if(cc==='PS') $('res_ps_city').textContent=selectedPSCity==='gaza'?'Gaza':'West Bank';
+    $('tr_res_fee_display').textContent=fTx; $('tr_res_rate_display').textContent=rate.toFixed(4); $('tr_res_sub_usd').textContent=fmt(sU||bU,'USD'); $('tr_res_cad_equiv').textContent=fmt(cV,'CAD'); $('tr_res_cad_fees').textContent=fmt(cF,'CAD');
 }
 
-// ========== SYRIA TRANSFER ==========
+// ===== SYRIA =====
 function setSyriaMode(mode) {
-    syriaMode = mode;
-    document.querySelectorAll('#tab_transfer_sy .mode-btn').forEach(b=>b.classList.remove('active','syria-active'));
-    const btn = document.getElementById('sy_mode_'+mode);
-    btn.classList.add('active');
-    if(['syp_cad','syp_usd','receive_syp'].includes(mode)) btn.classList.add('syria-active');
+    syriaMode=mode;
+    document.querySelectorAll('#tab_transfer_sy .mode-btn').forEach(function(b){b.classList.remove('active','syria-active');});
+    var btn=$('sy_mode_'+mode); btn.classList.add('active');
+    if(['syp_cad','syp_usd','receive_syp'].indexOf(mode)>=0) btn.classList.add('syria-active');
+    var uS=$('syria_usd_section'),sS=$('syria_syp_section'),sR=$('syp_result_row'),rT=$('resultTotal');
+    var gG=$('syp_give_group'),rG=$('syp_receive_group'),pG=$('syp_pay_currency_group'),sB=$('sypResultBox'),rB=$('sypReverseResultBox');
 
-    const uS=document.getElementById('syria_usd_section'), sS=document.getElementById('syria_syp_section');
-    const sR=document.getElementById('syp_result_row'), rT=document.getElementById('resultTotal');
-    const gG=document.getElementById('syp_give_group'), rG=document.getElementById('syp_receive_group');
-    const pG=document.getElementById('syp_pay_currency_group'), sB=document.getElementById('sypResultBox');
-    const rB=document.getElementById('sypReverseResultBox');
-
-    if (mode==='syp_cad'||mode==='syp_usd') {
-        uS.style.display='none'; sS.style.display='block'; sR.style.display='block';
-        rT.classList.add('syria-total');
-        gG.style.display='block'; rG.style.display='none'; pG.style.display='none';
-        sB.style.display='block'; rB.style.display='none';
-        document.getElementById('syp_result_label').textContent='Beneficiary Receives';
-        document.getElementById('lbl_syp_amount').textContent = mode==='syp_cad'?'Amount Customer Gives (CAD)':'Amount Customer Gives (USD)';
+    if(mode==='syp_cad'||mode==='syp_usd') {
+        uS.style.display='none';sS.style.display='block';sR.style.display='block';rT.classList.add('syria-total');
+        gG.style.display='block';rG.style.display='none';pG.style.display='none';sB.style.display='block';rB.style.display='none';
+        $('syp_result_label').textContent='Beneficiary Receives';
+        $('lbl_syp_amount').textContent=mode==='syp_cad'?'Amount Customer Gives (CAD)':'Amount Customer Gives (USD)';
         renderCitySelector(); calcSYPTransfer();
-    } else if (mode==='receive_syp') {
-        uS.style.display='none'; sS.style.display='block'; sR.style.display='block';
-        rT.classList.add('syria-total');
-        gG.style.display='none'; rG.style.display='block'; pG.style.display='block';
-        sB.style.display='block'; rB.style.display='block';
-        document.getElementById('syp_result_label').textContent='Beneficiary Will Receive';
+    } else if(mode==='receive_syp') {
+        uS.style.display='none';sS.style.display='block';sR.style.display='block';rT.classList.add('syria-total');
+        gG.style.display='none';rG.style.display='block';pG.style.display='block';sB.style.display='block';rB.style.display='block';
+        $('syp_result_label').textContent='Beneficiary Will Receive';
         renderCitySelector(); calcReceiveSYP();
     } else {
-        // send_usd or spend_cad
-        uS.style.display='block'; sS.style.display='none'; sR.style.display='none';
-        rT.classList.remove('syria-total');
-        document.getElementById('lbl_sy_amount').textContent = mode==='send_usd'?'Amount to Send (USD)':'Total Cash (CAD)';
-        document.getElementById('lbl_total').textContent = mode==='send_usd'?'Collect (CAD)':'Beneficiary Gets (USD)';
+        uS.style.display='block';sS.style.display='none';sR.style.display='none';rT.classList.remove('syria-total');
+        $('lbl_sy_amount').textContent=mode==='send_usd'?'Amount to Send (USD)':'Total Cash (CAD)';
+        $('lbl_total').textContent=mode==='send_usd'?'Collect (CAD)':'Beneficiary Gets (USD)';
         handleSyriaAmountChange();
     }
 }
 
 function handleSyriaAmountChange() {
-    // 1. Ensure rate
-    if (!isSyriaRateManual) {
-        document.getElementById('sy_rate').value = getClientRate().toFixed(4);
-    }
-    const rate = ensureRate('sy_rate');
-    const amt  = parseFloat(document.getElementById('sy_amount').value) || 0;
-
-    // 2. Convert to USD for tier matching
-    let usdAmt;
-    if (syriaMode === 'spend_cad') {
-        usdAmt = rate > 0 ? amt / rate : 0;
-    } else {
-        usdAmt = amt; // send_usd mode
-    }
-
-    // 3. Auto-detect fee
-    applyAutoFee('SY', usdAmt);
-
-    // 4. Calculate
-    calcSyriaTransfer();
+    if(!isSyriaRateManual) $('sy_rate').value=getClientRate().toFixed(4);
+    var rate=ensureRate('sy_rate'), amt=parseFloat($('sy_amount').value)||0;
+    var usd = syriaMode==='spend_cad' ? (rate>0?amt/rate:0) : amt;
+    applyAutoFee('SY',usd); calcSyriaTransfer();
 }
+function markSyriaFeeManual() { isSyriaFeeManual=true; var rate=ensureRate('sy_rate'),amt=parseFloat($('sy_amount').value)||0; applyAutoFee('SY',syriaMode==='spend_cad'?(rate>0?amt/rate:0):amt); }
 
-function markSyriaFeeManual() {
-    isSyriaFeeManual = true;
-    // Re-run detection to update badge to "manual" mode
-    const rate = ensureRate('sy_rate');
-    const amt  = parseFloat(document.getElementById('sy_amount').value) || 0;
-    const usdAmt = syriaMode === 'spend_cad' ? (rate>0 ? amt/rate : 0) : amt;
-    applyAutoFee('SY', usdAmt);
-}
-
-function calcSYPTransferAny() { syriaMode==='receive_syp' ? calcReceiveSYP() : calcSYPTransfer(); }
+function calcSYPTransferAny() { syriaMode==='receive_syp'?calcReceiveSYP():calcSYPTransfer(); }
 
 function calcSYPTransfer() {
-    const amt = parseFloat(document.getElementById('syp_customer_amount').value)||0;
-    const fee = parseFloat(document.getElementById('syp_fee').value)||0;
-    const thr = parseFloat(document.getElementById('syp_fee_threshold').value)||500;
-    const city= syriaCities[selectedCity];
-    document.getElementById('fee_display').textContent = fee;
-    document.getElementById('threshold_display').textContent = thr;
-
-    let aFee = amt<thr ? fee : 0, net = amt-aFee;
-    let rate = syriaMode==='syp_usd' ? city.usdRate : city.cadRate;
-    let syp  = net * rate;
-
-    document.getElementById('syp_beneficiary_amount').textContent = fmtSYP(syp);
-    document.getElementById('syp_rate_info').textContent = `Rate: ${rate.toLocaleString()} SYP per ${syriaMode==='syp_usd'?'USD':'CAD'} (${city.name})`;
-    const cur = syriaMode==='syp_usd'?'USD':'CAD';
-    document.getElementById('sy_res_base').textContent = fmt(amt,cur);
-    document.getElementById('sy_res_fee').textContent  = aFee>0 ? fmt(aFee,cur) : 'No fee';
-    document.getElementById('sy_res_rate').textContent = rate.toLocaleString()+' SYP';
-    document.getElementById('sy_res_syp').textContent  = fmtSYP(syp);
-    document.getElementById('sy_res_city').textContent = city.name;
-    document.getElementById('sy_res_cad').textContent  = syriaMode==='syp_usd'?'—':fmt(amt,'CAD');
-    document.getElementById('lbl_total').textContent   = syriaMode==='syp_usd'?'Collect (USD)':'Collect (CAD)';
-    document.getElementById('final_total').textContent = fmt(amt,cur);
+    var amt=parseFloat($('syp_customer_amount').value)||0, fee=parseFloat($('syp_fee').value)||0, thr=parseFloat($('syp_fee_threshold').value)||500, city=syriaCities[selectedCity];
+    $('fee_display').textContent=fee; $('threshold_display').textContent=thr;
+    var aFee=amt<thr?fee:0, net=amt-aFee, rate=syriaMode==='syp_usd'?city.usdRate:city.cadRate, syp=net*rate;
+    var cur=syriaMode==='syp_usd'?'USD':'CAD';
+    $('syp_beneficiary_amount').textContent=fmtSYP(syp); $('syp_rate_info').textContent='Rate: '+rate.toLocaleString()+' SYP per '+cur+' ('+city.name+')';
+    $('sy_res_base').textContent=fmt(amt,cur); $('sy_res_fee').textContent=aFee>0?fmt(aFee,cur):'No fee'; $('sy_res_rate').textContent=rate.toLocaleString()+' SYP';
+    $('sy_res_syp').textContent=fmtSYP(syp); $('sy_res_city').textContent=city.name; $('sy_res_cad').textContent=syriaMode==='syp_usd'?'—':fmt(amt,'CAD');
+    $('lbl_total').textContent=syriaMode==='syp_usd'?'Collect (USD)':'Collect (CAD)'; $('final_total').textContent=fmt(amt,cur);
 }
 
 function calcReceiveSYP() {
-    const target = parseFloat(document.getElementById('syp_target_amount').value)||0;
-    const pay    = document.getElementById('syp_pay_currency').value;
-    const fee    = parseFloat(document.getElementById('syp_fee').value)||0;
-    const thr    = parseFloat(document.getElementById('syp_fee_threshold').value)||500;
-    const city   = syriaCities[selectedCity];
-    document.getElementById('fee_display').textContent = fee;
-    document.getElementById('threshold_display').textContent = thr;
-
-    const rate = pay==='USD' ? city.usdRate : city.cadRate;
-    let net = rate>0 ? target/rate : 0;
-    let aFee=0, total;
-    if (pay==='CAD') {
-        aFee = net<thr ? fee : 0;
-        total = net + aFee;
-    } else {
-        const uR = parseFloat(document.getElementById('spot_usd').value)||1.35;
-        const tU = thr/uR;
-        aFee = net<tU ? fee/uR : 0;
-        total = net + aFee;
-    }
-
-    document.getElementById('syp_beneficiary_amount').textContent = fmtSYP(target);
-    document.getElementById('syp_rate_info').textContent = `Rate: ${rate.toLocaleString()} SYP per ${pay} (${city.name})`;
-    const cur = pay==='USD'?'USD':'CAD';
-    document.getElementById('syp_customer_must_pay').textContent = fmt(total,cur);
-    document.getElementById('syp_reverse_rate_info').textContent = aFee>0 ? `${fmt(net,cur)} + ${fmt(aFee,cur)} fee` : 'No fee (over threshold)';
-    document.getElementById('sy_res_base').textContent = fmt(net,cur);
-    document.getElementById('sy_res_fee').textContent  = aFee>0 ? fmt(aFee,cur) : 'No fee';
-    document.getElementById('sy_res_rate').textContent = rate.toLocaleString()+' SYP';
-    document.getElementById('sy_res_syp').textContent  = fmtSYP(target);
-    document.getElementById('sy_res_city').textContent = city.name;
-    document.getElementById('sy_res_cad').textContent  = pay==='CAD'?fmt(total,'CAD'):'—';
-    document.getElementById('lbl_total').textContent   = `Collect (${pay})`;
-    document.getElementById('final_total').textContent = fmt(total,cur);
+    var target=parseFloat($('syp_target_amount').value)||0, pay=$('syp_pay_currency').value, fee=parseFloat($('syp_fee').value)||0, thr=parseFloat($('syp_fee_threshold').value)||500, city=syriaCities[selectedCity];
+    $('fee_display').textContent=fee; $('threshold_display').textContent=thr;
+    var rate=pay==='USD'?city.usdRate:city.cadRate, net=rate>0?target/rate:0, aFee=0, total;
+    if(pay==='CAD'){aFee=net<thr?fee:0;total=net+aFee;}else{var uR=parseFloat($('spot_usd').value)||1.35;aFee=net<thr/uR?fee/uR:0;total=net+aFee;}
+    var cur=pay==='USD'?'USD':'CAD';
+    $('syp_beneficiary_amount').textContent=fmtSYP(target); $('syp_rate_info').textContent='Rate: '+rate.toLocaleString()+' SYP per '+pay+' ('+city.name+')';
+    $('syp_customer_must_pay').textContent=fmt(total,cur); $('syp_reverse_rate_info').textContent=aFee>0?fmt(net,cur)+' + '+fmt(aFee,cur)+' fee':'No fee';
+    $('sy_res_base').textContent=fmt(net,cur); $('sy_res_fee').textContent=aFee>0?fmt(aFee,cur):'No fee'; $('sy_res_rate').textContent=rate.toLocaleString()+' SYP';
+    $('sy_res_syp').textContent=fmtSYP(target); $('sy_res_city').textContent=city.name; $('sy_res_cad').textContent=pay==='CAD'?fmt(total,'CAD'):'—';
+    $('lbl_total').textContent='Collect ('+pay+')'; $('final_total').textContent=fmt(total,cur);
 }
 
 function calcSyriaTransfer() {
-    if (['syp_cad','syp_usd'].includes(syriaMode)) return calcSYPTransfer();
-    if (syriaMode==='receive_syp') return calcReceiveSYP();
-
-    const inputVal = parseFloat(document.getElementById('sy_amount').value)||0;
-    const fT = document.getElementById('sy_fee_type').value;
-    const fV = parseFloat(document.getElementById('sy_fee_val').value)||0;
-    const rate = ensureRate('sy_rate');
-
-    let baseUSD=0, feeTxt='', cadValue=0, cadFees=0, subUSD=0;
-
-    if (syriaMode === 'send_usd') {
-        baseUSD = inputVal;
-        if(fT==='percent')     { const f=baseUSD*(fV/100); subUSD=baseUSD+f; feeTxt=`${fV}% ($${fmtNum(f)} USD)`; cadValue=subUSD*rate; }
-        else if(fT==='fixed_usd'){ subUSD=baseUSD+fV; feeTxt=`$${fmtNum(fV)} USD`; cadValue=subUSD*rate; }
-        else                     { subUSD=baseUSD; feeTxt=`$${fmtNum(fV)} CAD`; cadValue=subUSD*rate; cadFees=fV; }
-        document.getElementById('sy_res_base').textContent = fmt(baseUSD,'USD');
-        document.getElementById('final_total').textContent = fmt(cadValue+cadFees,'CAD');
-        document.getElementById('lbl_total').textContent   = 'Collect (CAD)';
+    if(['syp_cad','syp_usd'].indexOf(syriaMode)>=0) return calcSYPTransfer();
+    if(syriaMode==='receive_syp') return calcReceiveSYP();
+    var iv=parseFloat($('sy_amount').value)||0, fT=$('sy_fee_type').value, fV=parseFloat($('sy_fee_val').value)||0, rate=ensureRate('sy_rate');
+    var bU=0,fTx='',cV=0,cF=0,sU=0;
+    if(syriaMode==='send_usd') {
+        bU=iv;
+        if(fT==='percent'){var f=bU*(fV/100);sU=bU+f;fTx=fV+'% ($'+fmtNum(f)+' USD)';cV=sU*rate;}
+        else if(fT==='fixed_usd'){sU=bU+fV;fTx='$'+fmtNum(fV)+' USD';cV=sU*rate;}
+        else{sU=bU;fTx='$'+fmtNum(fV)+' CAD';cV=sU*rate;cF=fV;}
+        $('sy_res_base').textContent=fmt(bU,'USD'); $('final_total').textContent=fmt(cV+cF,'CAD'); $('lbl_total').textContent='Collect (CAD)';
     } else {
-        // spend_cad
-        const totalCAD = inputVal;
-        if(fT==='fixed_cad')   { cadFees=fV; feeTxt=`$${fmtNum(fV)} CAD`; cadValue=totalCAD-cadFees; baseUSD=cadValue/rate; }
-        else if(fT==='fixed_usd'){ feeTxt=`$${fmtNum(fV)} USD`; cadValue=totalCAD; subUSD=cadValue/rate; baseUSD=subUSD-fV; }
-        else                     { feeTxt=`${fV}% Comm`; cadValue=totalCAD; subUSD=totalCAD/rate; baseUSD=subUSD*(1-fV/100); }
-        document.getElementById('sy_res_base').textContent = fmt(baseUSD,'USD');
-        document.getElementById('final_total').textContent = fmt(baseUSD,'USD');
-        document.getElementById('lbl_total').textContent   = 'Beneficiary Gets (USD)';
+        var tC=iv;
+        if(fT==='fixed_cad'){cF=fV;fTx='$'+fmtNum(fV)+' CAD';cV=tC-cF;bU=cV/rate;}
+        else if(fT==='fixed_usd'){fTx='$'+fmtNum(fV)+' USD';cV=tC;sU=cV/rate;bU=sU-fV;}
+        else{fTx=fV+'% Comm';cV=tC;sU=tC/rate;bU=sU*(1-fV/100);}
+        $('sy_res_base').textContent=fmt(bU,'USD'); $('final_total').textContent=fmt(bU,'USD'); $('lbl_total').textContent='Beneficiary Gets (USD)';
     }
-
-    document.getElementById('sy_res_fee').textContent  = feeTxt;
-    document.getElementById('sy_res_rate').textContent  = rate.toFixed(4);
-    document.getElementById('sy_res_cad').textContent   = fmt(cadValue,'CAD');
+    $('sy_res_fee').textContent=fTx; $('sy_res_rate').textContent=rate.toFixed(4); $('sy_res_cad').textContent=fmt(cV,'CAD');
 }
 
-// ========== API ==========
-function selectSource(src) {
-    activeSource=src; localStorage.setItem('apiSource',src);
-    document.querySelectorAll('.api-source-btn').forEach(b=>b.classList.remove('active'));
-    document.getElementById('src_'+src).classList.add('active');
-    document.getElementById('setup_google').style.display  = src==='google'?'block':'none';
-    document.getElementById('setup_free').style.display    = src==='free'?'block':'none';
-    document.getElementById('setup_api_key').style.display = src==='api_key'?'block':'none';
-    updateSourceDisplay();
-}
-function updateSourceDisplay() {
-    const n={free:'🆓 Free API',google:'📊 Google Sheets',api_key:'🔐 Custom API Key'};
-    document.getElementById('currentSourceName').textContent = n[activeSource]||n.free;
-}
-async function saveGoogleUrl() {
-    const url=document.getElementById('google_script_url').value.trim(), st=document.getElementById('google_status');
-    if(!url){showStatus(st,'Enter a URL','disconnected');return;}
-    showStatus(st,'⏳ Testing...','pending');
-    try{const r=await fetch(url);const d=await r.json();if(d&&typeof d==='object'){localStorage.setItem('googleScriptUrl',url);showStatus(st,`✅ Connected! ${Object.keys(d).filter(k=>!k.startsWith('_')).length} rates found.`,'connected');showToast('Google Sheets connected!');applyExternalRates(d);}else showStatus(st,'❌ Invalid format','disconnected');}catch(e){showStatus(st,'❌ '+e.message,'disconnected');}
-}
-async function saveCustomKey() {
-    const key=document.getElementById('custom_api_key').value.trim(), prov=document.getElementById('api_provider').value, st=document.getElementById('custom_status');
-    if(!key){showStatus(st,'Enter a key','disconnected');return;}
-    showStatus(st,'⏳ Testing...','pending');
-    try{const url=API_PROVIDERS[prov].urlTemplate.replace('{KEY}',key);const r=await fetch(url);const d=await r.json();if(d.error||d.error_type)showStatus(st,'❌ Invalid key','disconnected');else{localStorage.setItem('customApiKey',key);localStorage.setItem('customApiProvider',prov);showStatus(st,`✅ Connected to ${API_PROVIDERS[prov].name}!`,'connected');showToast(API_PROVIDERS[prov].name+' connected!');}}catch(e){showStatus(st,'❌ '+e.message,'disconnected');}
-}
-function showStatus(el,msg,type){el.style.display='flex';el.className='api-status '+type;el.textContent=msg;}
-function applyExternalRates(data) {
-    CURRENCIES.forEach(c=>{if(data[c]){const el=document.getElementById('spot_'+c.toLowerCase());if(el)el.value=parseFloat(data[c]).toFixed(4);}});
-    document.getElementById('lastUpdated').textContent='Last sync: '+new Date().toLocaleTimeString();
-    document.getElementById('liveBadge').style.display='flex';
-    recalcAll(); saveRates();
-}
-async function fetchRates() {
-    const btn=document.getElementById('btnSync');btn.classList.add('loading');
-    try{if(activeSource==='google')await fetchGoogleRates();else if(activeSource==='api_key')await fetchCustomApiRates();else await fetchFreeRates();}catch(e){showToast('Failed: '+e.message,'error');}
-    btn.classList.remove('loading');
-}
-async function fetchGoogleRates(){const url=localStorage.getItem('googleScriptUrl');if(!url){showToast('Configure Google URL first','error');openApiModal();return;}const r=await fetch(url);const d=await r.json();applyExternalRates(d);showToast('Rates updated from Google!');}
-async function fetchFreeRates(){const r=await fetch(FREE_API);const d=await r.json();if(d.rates){CURRENCIES.forEach(c=>{if(d.rates[c]){const el=document.getElementById('spot_'+c.toLowerCase());if(el)el.value=(1/d.rates[c]).toFixed(4);}});document.getElementById('lastUpdated').textContent='Last sync: '+new Date().toLocaleTimeString();document.getElementById('liveBadge').style.display='flex';recalcAll();saveRates();showToast('Rates updated from Free API!');}}
-async function fetchCustomApiRates(){const key=localStorage.getItem('customApiKey'),prov=localStorage.getItem('customApiProvider')||'exchangerate';if(!key){showToast('Configure API key first','error');openApiModal();return;}const url=API_PROVIDERS[prov].urlTemplate.replace('{KEY}',key);const r=await fetch(url);const d=await r.json();let rates={};if(prov==='exchangerate')rates=d.conversion_rates||{};else if(prov==='openexchange'){const cR=d.rates?.CAD||1;CURRENCIES.forEach(c=>{if(d.rates[c])rates[c]=d.rates[c]/cR;});}else if(prov==='currencylayer'){const q=d.quotes||{};CURRENCIES.forEach(c=>{if(q['CAD'+c])rates[c]=q['CAD'+c];});}CURRENCIES.forEach(c=>{if(rates[c]){const el=document.getElementById('spot_'+c.toLowerCase());if(el)el.value=(1/rates[c]).toFixed(4);}});document.getElementById('lastUpdated').textContent='Last sync: '+new Date().toLocaleTimeString();document.getElementById('liveBadge').style.display='flex';recalcAll();saveRates();showToast(`Rates from ${API_PROVIDERS[prov].name}!`);}
-
-// ========== RECALC ==========
+// ===== RECALC =====
 function recalcAll() {
     calcExchange(); updateQuickRates();
-    if (currentTab==='transfer_sy') {
-        if (['send_usd','spend_cad'].includes(syriaMode)) handleSyriaAmountChange();
-        else calcSYPTransferAny();
-    } else if (currentTab.startsWith('transfer_')) {
-        const cc = currentTab.replace('transfer_','').toUpperCase();
-        if (['JO','LB','PS','EG','IQ'].includes(cc)) handleCountryAmountChange(cc);
-    }
+    if(currentTab==='transfer_sy'){if(['send_usd','spend_cad'].indexOf(syriaMode)>=0)handleSyriaAmountChange();else calcSYPTransferAny();}
+    else if(currentTab.indexOf('transfer_')===0){var cc=currentTab.replace('transfer_','').toUpperCase();if(['JO','LB','PS','EG','IQ'].indexOf(cc)>=0)handleCountryAmountChange(cc);}
 }
-function updateQuickRates() {
-    ['usd','eur','gbp','jod'].forEach(c=>{const el=document.getElementById('quick_'+c),sp=document.getElementById('spot_'+c);if(el&&sp)el.textContent=parseFloat(sp.value).toFixed(4);});
-}
+function updateQuickRates() { ['usd','eur','gbp','jod'].forEach(function(c){var el=$('quick_'+c),sp=$('spot_'+c);if(el&&sp){var v=parseFloat(sp.value);el.textContent=v?v.toFixed(4):'—';}}); }
 
-// ========== RECEIPT ==========
+// ===== RECEIPT =====
 function printReceipt() {
-    document.getElementById('p_name').textContent    = document.getElementById('kyc_name').value||'—';
-    document.getElementById('p_address').textContent  = document.getElementById('kyc_address').value||'—';
-    document.getElementById('p_id_num').textContent   = document.getElementById('kyc_id_num').value||'—';
-    const d=new Date();
-    document.getElementById('p_date').textContent = d.toLocaleDateString()+' '+d.toLocaleTimeString();
-    document.getElementById('p_ref').textContent  = 'R-'+Math.floor(Math.random()*1000000);
-
-    document.getElementById('p_syp_row').style.display  = 'none';
-    document.getElementById('p_city_row').style.display  = 'none';
-
-    if (currentTab==='exchange') {
-        document.getElementById('p_service').textContent = 'CASH EXCHANGE ('+exchangeMode.toUpperCase()+')';
-        document.getElementById('p_amount').textContent  = document.getElementById('ex_amount').value+' '+document.getElementById('ex_currency').value;
-        document.getElementById('p_rate').textContent    = document.getElementById('ex_res_rate').textContent;
-        document.getElementById('p_fee').textContent     = 'Included in Rate';
-    } else if (currentTab==='transfer_sy' && ['syp_cad','syp_usd','receive_syp'].includes(syriaMode)) {
-        document.getElementById('p_service').textContent = 'TRANSFER TO SYRIA (SYP)';
-        document.getElementById('p_amount').textContent  = document.getElementById('sy_res_base').textContent;
-        document.getElementById('p_syp_row').style.display = 'flex';
-        document.getElementById('p_syp_amt').textContent = document.getElementById('sy_res_syp').textContent;
-        document.getElementById('p_city_row').style.display = 'flex';
-        document.getElementById('p_city').textContent    = syriaCities[selectedCity].name;
-        document.getElementById('p_rate').textContent    = document.getElementById('sy_res_rate').textContent;
-        document.getElementById('p_fee').textContent     = document.getElementById('sy_res_fee').textContent;
-    } else if (currentTab==='transfer_sy') {
-        document.getElementById('p_service').textContent = 'TRANSFER TO SYRIA';
-        document.getElementById('p_amount').textContent  = document.getElementById('sy_res_base').textContent;
-        document.getElementById('p_rate').textContent    = document.getElementById('sy_res_rate').textContent;
-        document.getElementById('p_fee').textContent     = document.getElementById('sy_res_fee').textContent;
-    } else if (currentTab==='transfer_ps') {
-        document.getElementById('p_service').textContent = 'TRANSFER TO PALESTINE';
-        document.getElementById('p_amount').textContent  = document.getElementById('tr_res_base').textContent;
-        document.getElementById('p_rate').textContent    = document.getElementById('tr_res_rate_display').textContent;
-        document.getElementById('p_fee').textContent     = document.getElementById('tr_res_fee_display').textContent;
-        document.getElementById('p_city_row').style.display = 'flex';
-        document.getElementById('p_city').textContent    = selectedPSCity==='gaza'?'Gaza':'West Bank';
-    } else {
-        const names = {transfer_jo:'JORDAN',transfer_lb:'LEBANON',transfer_eg:'EGYPT',transfer_iq:'IRAQ'};
-        document.getElementById('p_service').textContent = 'TRANSFER TO '+(names[currentTab]||'');
-        document.getElementById('p_amount').textContent  = document.getElementById('tr_res_base').textContent;
-        document.getElementById('p_rate').textContent    = document.getElementById('tr_res_rate_display').textContent;
-        document.getElementById('p_fee').textContent     = document.getElementById('tr_res_fee_display').textContent;
-    }
-    document.getElementById('p_total').textContent = document.getElementById('final_total').textContent;
-    window.print();
+    $('p_name').textContent=$('kyc_name').value||'—'; $('p_address').textContent=$('kyc_address').value||'—'; $('p_id_num').textContent=$('kyc_id_num').value||'—';
+    var d=new Date(); $('p_date').textContent=d.toLocaleDateString()+' '+d.toLocaleTimeString(); $('p_ref').textContent='R-'+Math.floor(Math.random()*1000000);
+    $('p_syp_row').style.display='none'; $('p_city_row').style.display='none';
+    if(currentTab==='exchange'){$('p_service').textContent='CASH EXCHANGE ('+exchangeMode.toUpperCase()+')';$('p_amount').textContent=($('ex_amount').value||'0')+' '+$('ex_currency').value;$('p_rate').textContent=$('ex_res_rate').textContent;$('p_fee').textContent='In Rate';}
+    else if(currentTab==='transfer_sy'&&['syp_cad','syp_usd','receive_syp'].indexOf(syriaMode)>=0){$('p_service').textContent='TRANSFER SYRIA (SYP)';$('p_amount').textContent=$('sy_res_base').textContent;$('p_syp_row').style.display='flex';$('p_syp_amt').textContent=$('sy_res_syp').textContent;$('p_city_row').style.display='flex';$('p_city').textContent=syriaCities[selectedCity].name;$('p_rate').textContent=$('sy_res_rate').textContent;$('p_fee').textContent=$('sy_res_fee').textContent;}
+    else if(currentTab==='transfer_sy'){$('p_service').textContent='TRANSFER SYRIA';$('p_amount').textContent=$('sy_res_base').textContent;$('p_rate').textContent=$('sy_res_rate').textContent;$('p_fee').textContent=$('sy_res_fee').textContent;}
+    else if(currentTab==='transfer_ps'){$('p_service').textContent='TRANSFER PALESTINE';$('p_amount').textContent=$('tr_res_base').textContent;$('p_rate').textContent=$('tr_res_rate_display').textContent;$('p_fee').textContent=$('tr_res_fee_display').textContent;$('p_city_row').style.display='flex';$('p_city').textContent=selectedPSCity==='gaza'?'Gaza':'West Bank';}
+    else{var n={transfer_jo:'JORDAN',transfer_lb:'LEBANON',transfer_eg:'EGYPT',transfer_iq:'IRAQ'};$('p_service').textContent='TRANSFER '+(n[currentTab]||'');$('p_amount').textContent=$('tr_res_base').textContent;$('p_rate').textContent=$('tr_res_rate_display').textContent;$('p_fee').textContent=$('tr_res_fee_display').textContent;}
+    $('p_total').textContent=$('final_total').textContent; window.print();
 }
 
-document.addEventListener('keydown', e => { if(e.key==='Escape'){closeSettingsModal();closeReceiptModal();closeApiModal();} });
+// ===== GO =====
 init();
 </script>
 </body>
